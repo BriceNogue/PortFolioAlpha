@@ -1,10 +1,16 @@
 <template>
     <div class="AboutLayout">
-        <HeaderComponent/>
-        <main class="AboutLayoutMain">
-            <slot />
-        </main>
-        <h3>Footer</h3>
+        <div class="header">
+            <HeaderComponent/>
+        </div>
+        <div>
+            <main class="AboutLayoutMain content">
+                <slot />
+            </main>
+        </div>
+        <div>
+            <h3>Footer</h3>
+        </div>
     </div>
 </template>
 
@@ -31,5 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.header {
+    padding-bottom: 100px;   
+}
 </style>

@@ -37,7 +37,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.header {
-    padding-bottom: 100px;   
-}
+
 </style>

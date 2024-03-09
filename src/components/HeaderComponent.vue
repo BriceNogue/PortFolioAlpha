@@ -8,7 +8,7 @@
             </a>
           </div>  
           <nav>
-            <router-link class="nav-link" to="/">About me</router-link>
+            <router-link class="nav-link" to="/">Home</router-link>
             <router-link class="nav-link" to="/projects">Education</router-link>
             <router-link class="nav-link" to="/projects">Skills</router-link>
             <router-link class="nav-link" to="/projects">Experiences</router-link>
@@ -105,7 +105,8 @@ header.onScroll {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 5rem 0 5rem;
   align-items: center;  
 }
 .logo {

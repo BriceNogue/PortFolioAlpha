@@ -2,11 +2,11 @@
   <div class="home">
     <div class="div-img-and-years">
       <div class="div-img ">
-        <img src="@/assets/profil.svg" alt="">
+        <img src="@/assets/profil.png" alt="">
 
         <div class="experience-years">
-          <h1>02+</h1>
-          <h3>Years experience</h3>
+          <h1>+02</h1>
+          <h3>Années d'expérience</h3>
         </div>
       </div>
     </div>
@@ -83,8 +83,11 @@ export default {
       position: absolute;
       top: 65%;
       left: 90%;
-      width: 150px;
+      width: 160px;
       height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       background: #1A1919;
       color: white;
       border-radius: 10px;
@@ -137,6 +140,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+
     .btn-HireMe {
       width: 150px;
       height: 40px;

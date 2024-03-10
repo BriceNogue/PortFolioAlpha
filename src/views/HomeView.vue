@@ -19,12 +19,12 @@
         <h1 class="alpha"><b>ALPHA</b></h1>
       </div>
       <div>
-        <p class="about-p">Fillstack developer and 4th  year univerity students</p>
+        <p class="about-p">Fullstack developer and 4th  year univerity students</p>
       </div>
       <div class="div-btn">
         <button class="btn-HireMe">Hire me</button>
       </div>
-      <div class="div-skils">
+      <!--<div class="div-skils">
         <div class="javascript">
           <span>JavaScript</span>
         </div>
@@ -34,7 +34,7 @@
         <div class="c-sharp">
           <span>C#</span>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -69,13 +69,11 @@ export default {
 .div-img-and-years {
   width: 50%;
   height: 100vh;
-  border: solid 1px red;
   position: relative;
 
   .div-img {
     width: 100%;
     position: relative;
-    border: solid 1px black;
 
     img {
       width: 100%;
@@ -104,19 +102,21 @@ export default {
   justify-content: center;
   align-items: flex-end;
   padding: 0 5rem 0 0;
-  border: solid 1px blue;
 
   .my-name {
-    border: solid 1px red;
     line-height: 0;
-    word-spacing: 10px;
 
     h1 {
       font-size: 5rem;
+      letter-spacing: 15px;
+    }
+
+    h2 {
+      margin: 0 0 0 5px;
     }
 
     .brice {
-      margin: 50px 0 60px 0;
+      margin: 40px 0 65px 0;
       
     }
 
@@ -125,17 +125,12 @@ export default {
     }
 
     .alpha {
-      margin: 50px 0 60px 0;
-    }
-
-    b {
-      letter-spacing: 0px;
+      margin: 40px 0 60px 0;
     }
   }
 
   .about-p {
-    margin-top: 15px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.1px;
   }
 
   .div-btn {
@@ -149,7 +144,7 @@ export default {
       border-radius: 25px;
       font-size: 18px;
       color: white;
-      margin-top: 40px;
+      margin-top: 60px;
     }
   }
 

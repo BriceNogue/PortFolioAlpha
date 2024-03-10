@@ -9,9 +9,9 @@
           </div>  
           <nav>
             <router-link class="nav-link" to="/">Home</router-link>
-            <router-link class="nav-link" to="/projects">Education</router-link>
-            <router-link class="nav-link" to="/projects">Skills</router-link>
-            <router-link class="nav-link" to="/projects">Experiences</router-link>
+            <router-link class="nav-link" to="/education">Education</router-link>
+            <router-link class="nav-link" to="/skills">Skills</router-link>
+            <router-link class="nav-link" to="/experiences">Experiences</router-link>
             <router-link class="nav-link" to="/projects">Projects</router-link>
           </nav>
           <div class="hidden md:block">
@@ -38,9 +38,9 @@
         <div ref="sideNav" class="hidden sideNav">
           <nav>
             <router-link class="side-nav-link" to="/">About me</router-link>
-            <router-link class="side-nav-link" to="/projects">Education</router-link>
-            <router-link class="side-nav-link" to="/projects">Skills</router-link>
-            <router-link class="side-nav-link" to="/projects">Experiences</router-link>
+            <router-link class="side-nav-link" to="/education">Education</router-link>
+            <router-link class="side-nav-link" to="/skills">Skills</router-link>
+            <router-link class="side-nav-link" to="/experiences">Experiences</router-link>
             <router-link class="side-nav-link" to="/projects">Projects</router-link>
           </nav>
           <div class="nav-btn">

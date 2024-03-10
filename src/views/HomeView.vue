@@ -2,7 +2,7 @@
   <div class="home">
     <div class="div-img-and-years">
       <div class="div-img ">
-        <img src="@/assets/profil.png" alt="">
+        <img src="@/assets/profil.svg" alt="">
 
         <div class="experience-years">
           <h1>02+</h1>

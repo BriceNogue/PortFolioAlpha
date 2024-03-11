@@ -10,9 +10,23 @@
             <div class="formation-img">
                 <img src="../assets/educations-imgs/educations.svg" alt="">
             </div>
-            <div>
+            <div class="formation-details">
+                <h2>2023 / 2025</h2>
                 <h1>Master 1 MS2D</h1>
-                <h2>Manager de  Solution Digital et Data</h2>
+                <h2>"Manager de  Solution Digital et Data"</h2>
+                <a href="#">
+                    <h1>Groupe 3IL France</h1>
+                </a>
+                <div class="acquis">
+                    <h1>Acquis</h1>
+                    <h2><b>💻Développement .NET📱</b></h2>
+                    <h3>Web Blazor</h3>
+                    <h3>Mobile MAUI</h3>
+                    <h3>Dekstop avec WPF</h3>
+                    <h3>Backend ASP.NET Core</h3>
+                    <h2><b>👉Gestion de projet👈</b></h2>
+                    <h3>UML</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -85,5 +99,32 @@ export default {
         height: 100vh;
         padding: 5rem;
         display: flex;
+
+        div {
+            width: 50%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            h2 {
+                font-size: 25px;
+                font-weight: 500;
+            }
+        }
+
+        .acquis {
+            width: 100%;
+            padding-top: 2rem;
+
+            h3 {
+                font-size: 20px;
+            }
+        }
     }
 </style>

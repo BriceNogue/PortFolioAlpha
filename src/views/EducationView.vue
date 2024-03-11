@@ -7,11 +7,12 @@
             </div>
         </div>
         <div class="formation master-un">
-            <div>
-
+            <div class="formation-img">
+                <img src="../assets/educations-imgs/educations.svg" alt="">
             </div>
             <div>
-
+                <h1>Master 1 MS2D</h1>
+                <h2>Manager de  Solution Digital et Data</h2>
             </div>
         </div>
     </div>
@@ -82,5 +83,7 @@ export default {
     .formation {
         width: 100%;
         height: 100vh;
+        padding: 5rem;
+        display: flex;
     }
 </style>

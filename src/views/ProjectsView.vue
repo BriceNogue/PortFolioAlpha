@@ -104,6 +104,7 @@ export default {
         width: 100%;
         min-height: 100vh;
         padding: 10rem;
+        background: linear-gradient(180deg, white,#fcdbdb, white);
     }
 
     .div-top {
@@ -134,6 +135,7 @@ export default {
             padding: 20px 10px 20px 10px;
             border-radius: 10px;
             text-align: center;
+            background: white;
             transition: 0.3s;
 
             h1 {

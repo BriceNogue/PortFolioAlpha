@@ -3,19 +3,20 @@
       <header  ref="header" class="hidden md:block">
         <div class="nav-bar">
           <div class="logo">
-            <a to="/">
-              <img src="../assets/LogoAlpha-B.png" alt="">
-            </a>
+            <router-link to="/">
+              <img class="logo-B" src="../assets/LogoAlpha-B.png" alt="">
+              <img class="logo-N" src="../assets/LogoAlpha-N.png" alt="">
+            </router-link>
           </div>  
           <nav>
-            <router-link class="nav-link" to="/">Home</router-link>
-            <router-link class="nav-link" to="/education">Education</router-link>
-            <router-link class="nav-link" to="/skills">Skills</router-link>
-            <router-link class="nav-link" to="/experiences">Experiences</router-link>
-            <router-link class="nav-link" to="/projects">Projects</router-link>
+            <router-link class="nav-link" to="/">Accueil</router-link>
+            <router-link class="nav-link" to="/education">Formations</router-link>
+            <router-link class="nav-link" to="/skills">Compétences</router-link>
+            <router-link class="nav-link" to="/experiences">Expérience</router-link>
+            <router-link class="nav-link" to="/projects">Projets</router-link>
           </nav>
           <div class="hidden md:block">
-            <button class="btn-contact bg-blue-600 text-white">Contact me</button>
+            <button class="btn-contact bg-blue-600 text-white hover:scale-105">Contact me</button>
           </div>
         </div>
       </header>
@@ -74,7 +75,7 @@ export default {
     methods: {
       handleScroll() {
         if (window.scrollY > 150) {
-          this.$refs.header.classList.add('onScroll');
+          //this.$refs.header.classList.add('onScroll');
         } else {
           this.$refs.header.classList.remove('onScroll');
         }
@@ -91,15 +92,26 @@ export default {
 <style lang="scss" scoped>
 header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   background: transparent;
   z-index: 1;
   transition: all 300ms ease-in-out;
+
+  .logo-B {
+    display: none;
+  }
 }
 
 header.onScroll {
-  //background: opacify($color: #1A1919, $amount: 1);
-  color: white;
+  background: opacify($color: white, $amount: 1);
+
+  .logo-B {
+    display: none;
+  }
+
+  .logo-N {
+    display: block;
+  }
 }
 
 .nav-bar {
@@ -111,8 +123,8 @@ header.onScroll {
   align-items: center;  
 }
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 
     img {
         width: 100%;
@@ -124,7 +136,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     font-size: 18px;
-    color: #1A1919;
+    color: #1E293B;
     font-weight: 500;
     text-indent: 15px;
   }
@@ -143,6 +155,8 @@ nav {
   height: 40px;
   border-radius: 25px;
   font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -187,7 +201,7 @@ nav {
         text-transform: uppercase;
         padding: 10px 10px 10px;
         font-size: 18px;
-        color: #1A1919;
+        color: #1E293B;
         font-weight: 500;
       }
     }

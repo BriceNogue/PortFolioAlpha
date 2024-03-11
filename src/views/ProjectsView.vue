@@ -15,7 +15,7 @@
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
                 <div>
-                    <h1>Poject Name</h1>
+                    <h1>Plateforme Appli...</h1>
                     <p>Projet académique</p>
                     <h2>Encours...</h2>
                 </div>
@@ -155,8 +155,8 @@ export default {
                 background: #2563eb;
                 color: white;
                 font-weight: 500;
-                padding: 5px 15px 5px 15px;
-                border-radius: 5px;
+                padding: 5px 20px 5px 20px;
+                border-radius: 25px;
             }
         }
     }

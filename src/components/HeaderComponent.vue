@@ -98,7 +98,8 @@ header {
 }
 
 header.onScroll {
-  //background: opacify($color: #000000, $amount: 1);
+  //background: opacify($color: #1A1919, $amount: 1);
+  color: white;
 }
 
 .nav-bar {
@@ -106,7 +107,7 @@ header.onScroll {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem 0 5rem;
+  padding: 0 10rem 0 10rem;
   align-items: center;  
 }
 .logo {

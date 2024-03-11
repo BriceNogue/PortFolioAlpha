@@ -12,17 +12,17 @@
     </div>
     <div class="div-info">
       <div class="my-name">
-        <h2 class="h-my-name">My name is</h2>
+        <h2 class="h-my-name">Je suis</h2>
         <h1 class="brice">Brice</h1>
         <h1 class="nogue"><b>NOGUE</b></h1>
-        <h2>Commnonly known as</h2>
+        <h2>Souvent appelé</h2>
         <h1 class="alpha"><b>ALPHA</b></h1>
       </div>
       <div>
-        <p class="about-p">Fullstack developer and 4th  year univerity students</p>
+        <p class="about-p">Développeur Full Stack et étudiants en Mastrer un</p>
       </div>
       <div class="div-btn">
-        <button class="btn-HireMe">Hire me</button>
+        <button class="btn-HireMe">Mon CV</button>
       </div>
       <!--<div class="div-skils">
         <div class="javascript">
@@ -104,7 +104,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 5rem 0 0;
+  padding: 0 10rem 0 0;
 
   .my-name {
     line-height: 0;

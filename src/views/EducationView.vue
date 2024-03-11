@@ -193,6 +193,10 @@ export default {
         }
     }
 
+    .bachelor {
+        background: linear-gradient(to bottom, #ffffff, rgb(252, 219, 219, 0.7), #ffffff);
+    }
+
     /********************* Animations *************************/
 
     .animate-on-scroll {

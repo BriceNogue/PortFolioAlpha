@@ -1,14 +1,16 @@
 <template>
     <div class="div-container">
         <div class="div-top">
-            <div>
-                <h1>Formations</h1>
-                <h2>Vous avez là un aperçu de mon cursus</h2>
+            <div class="div-1">
+                <div class="div-2">
+                    <h1>Formations</h1>
+                    <h2>Vous avez là un aperçu de mon cursus</h2>
+                </div>
             </div>
         </div>
         <div class="formation master-un">
             <div class="formation-img">
-                <img src="../assets/educations-imgs/educations.svg" alt="">
+                <img src="../assets/educations-imgs/logo-3il.png" alt="">
             </div>
             <div class="formation-details">
                 <h2>2023 / 2025</h2>
@@ -19,14 +21,36 @@
                 </a>
                 <div class="acquis">
                     <h1>Acquis</h1>
-                    <h2><b>💻Développement .NET📱</b></h2>
-                    <h3>Web Blazor</h3>
-                    <h3>Mobile MAUI</h3>
-                    <h3>Dekstop avec WPF</h3>
-                    <h3>Backend ASP.NET Core</h3>
-                    <h2><b>👉Gestion de projet👈</b></h2>
+                    <h2>💻Développement .NET📱</h2>
+                    <h3>Blazor, MAUI, WPF, ASP.NET Core</h3>
+                    <h2>👉Base de données👈</h2>
+                    <h3>SQL Server</h3>
+                    <h2>👉CI / CD👈</h2>
+                    <h3>GitHub, GitLab, SonarCloud, Docker</h3>
+                    <h2>👉Gestion de projet👈</h2>
                     <h3>UML</h3>
                 </div>
+            </div>
+        </div>
+        <div class="formation bachelor">
+            <div class="formation-details animate-on-scroll">
+                <h2>2022 / 2023</h2>
+                <h1>Bachelor DLW</h1>
+                <h2>"Développement Logiciel Web"</h2>
+                <a href="#">
+                    <h1>IUC Douala, Cameroun</h1>
+                </a>
+                <div class="acquis">
+                    <h1>Acquis</h1>
+                    <h2>💻Développement JS/TS & Java📱</h2>
+                    <h3>Frontend Angular & Vue.js</h3>
+                    <h3>Backend Node.js & SpringBoot</h3>
+                    <h2>👉Test Logiciel👈</h2>
+                    <h3>JUnit</h3>
+                </div>
+            </div>
+            <div class="formation-img animate-on-scroll">
+                <img src="../assets/educations-imgs/logo-iuc.png" alt="">
             </div>
         </div>
     </div>
@@ -43,11 +67,34 @@ export default {
     },
 
     mounted() {
-        
+        //this.elements = this.$refs.animatedElements;
+        window.addEventListener('scroll', this.handleScroll);
+    },
+
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
     },
 
     methods: {
-        
+        handleScroll() {
+            const elements = document.querySelectorAll(".animate-on-scroll");
+            const options = {
+                threshold: 0.25
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                    entry.target.classList.add("is-visible");
+                    observer.unobserve(entry.target);
+                    }
+                });
+            }, options);
+            
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        }
     },
 };
 </script>
@@ -55,7 +102,22 @@ export default {
 <style lang="scss" scoped>
     .div-container {
         width: 100%;
+        //background-image: linear-gradient(to bottom, rgb(252, 219, 219, 0.7), #ffffff), url("../assets/educations-imgs/educations.svg");
+        //background-repeat: no-repeat;
+
+        //animation: linear move-background;
+        //animation-duration: auto;
+        //animation-timeline: scroll(root block);
     }
+
+    /*@keyframes move-background {
+        from {
+          background-position: 50% 0%;
+        }
+        to {
+          background-position: 50% 100%;
+        }
+    }*/
 
     .div-top {
         width: 100%;
@@ -68,10 +130,14 @@ export default {
         background-repeat: no-repeat;
         background-position: center;
         color: #1E293B;
-   
-        div {
+
+        .div-1 {
+            padding: 5px;
+            border: 1px solid #9CA3AF;
+        }
+
+        .div-2 {
             padding: 5rem 10rem 5rem 10rem;
-            border-radius: 5px;
             border: 1px solid #9CA3AF;
             display: flex;
             align-items: center;
@@ -120,11 +186,22 @@ export default {
 
         .acquis {
             width: 100%;
-            padding-top: 2rem;
 
             h3 {
                 font-size: 20px;
             }
         }
+    }
+
+    /********************* Animations *************************/
+
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+    .animate-on-scroll.is-visible {
+        opacity: 1;
+        transform: translateY(0);
     }
 </style>

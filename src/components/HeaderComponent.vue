@@ -23,7 +23,7 @@
 
       <!--Mobile-->
   
-      <div class="side-nav hidden md:hidden" ref="sideNav">
+      <div class="side-nav hidden md:hidden" ref="sideNav" id="side-nav">
         <div class="side-nav-header">
           <div class="logo">
             <a to="/">
@@ -38,11 +38,11 @@
         </div>
         <div class="sideMenu" ref="sideMenu">
           <nav>
-            <router-link class="side-nav-link" to="/">About me</router-link>
-            <router-link class="side-nav-link" to="/education">Education</router-link>
-            <router-link class="side-nav-link" to="/skills">Skills</router-link>
-            <router-link class="side-nav-link" to="/experiences">Experiences</router-link>
-            <router-link class="side-nav-link" to="/projects">Projects</router-link>
+            <router-link class="side-nav-link" to="/" @click="toggleSide">Accueil</router-link>
+            <router-link class="side-nav-link" to="/education" @click="toggleSide">Formations</router-link>
+            <router-link class="side-nav-link" to="/skills" @click="toggleSide">Compétences</router-link>
+            <router-link class="side-nav-link" to="/experiences" @click="toggleSide">Expérience</router-link>
+            <router-link class="side-nav-link" to="/projects" @click="toggleSide">Projets</router-link>
           </nav>
           <div class="nav-btn">
             <button class="btn-contact bg-blue-600 text-white">Contact me</button>
@@ -82,10 +82,10 @@ export default {
       },
 
       toggleSide() {
-          this.$refs.sideNavBtn.classList.toggle('active');
-          this.$refs.sideNav.classList.toggle('opened');
-          this.$refs.sideMenu.classList.toggle('opened');
-      }
+        this.$refs.sideNavBtn.classList.toggle('active');
+        this.$refs.sideNav.classList.toggle('opened');
+        this.$refs.sideMenu.classList.toggle('opened');
+      },
     },
 };
 </script>

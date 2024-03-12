@@ -2,7 +2,7 @@
     <div class="div-container">
         <div class="div-top">
             <div class="projects-title">
-                <h1>Mes projets <br> La plupart de ces projets ont été <br>réalisé en équipe</h1>
+                <h1>Mes projets <br> La plupart de ces projets ont été réalisé en équipe</h1>
                 <p>Du plus récent au plus ancien</p>
             </div>
             <div class="projects-img">
@@ -115,13 +115,13 @@ export default {
 
         .projects-title {
             h1 {
-                font-size: 2rem;
+                font-size: 3rem;
                 font-weight: bold;
             }
         }
 
         .projects-img {
-            width: 20%;
+            width: 40%;
         }
     }
 
@@ -166,7 +166,26 @@ export default {
     /****************************** Responsive *********************************/
 
     @media (max-width: 880px) {
-        
+        .div-container {
+            padding: 5rem 2rem 2rem 2rem;
+        }
+
+        .div-top {
+            display: inherit;
+    
+            .projects-title {
+                width: 100%;
+                h1 {
+                    font-size: 2rem;
+                    font-weight: bold;
+                    text-align: justify;
+                }
+            }
+    
+            .projects-img {
+                width: 100%;
+            }
+        }
     }
 
 </style>

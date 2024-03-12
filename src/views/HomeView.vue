@@ -207,7 +207,7 @@ export default {
   
       img {
         position: absolute;
-        top: -2rem;
+        top: -3rem;
         left: -130px;
       }
   
@@ -221,47 +221,38 @@ export default {
   .div-info {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 0 10rem 0 0;
-    border: #1A1919 solid 1px;
+    align-items: flex-start;
+    padding: 0 2rem 2rem 2rem;
   
     .my-name {
       line-height: 0;
   
       h1 {
-        font-size: 5rem;
-        letter-spacing: 15px;
-      }
-  
-      h2 {
-        margin: 0 0 0 5px;
+        font-size: 3rem;
+        letter-spacing: 5px;
       }
   
       .brice {
-        margin: 40px 0 65px 0;
+        margin: 40px 0 40px 0;
         
       }
   
       .nogue {
-        margin: 0 0 60px 0;
+        margin: 0 0 40px 0;
       }
   
       .alpha {
-        margin: 40px 0 60px 0;
+        margin: 40px 0 40px 0;
       }
     }
   
     .about-p {
-      letter-spacing: 0.1px;
+      letter-spacing: 0.3px;
+      font-size: 15px;
     }
   
     .div-btn {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
+      justify-content: center;
   
       .btn-HireMe {
         width: 150px;
@@ -270,7 +261,7 @@ export default {
         border-radius: 25px;
         font-size: 18px;
         color: white;
-        margin-top: 60px;
+        margin-top: 30px;
       }
     }
   }

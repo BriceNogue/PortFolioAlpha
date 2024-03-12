@@ -9,10 +9,10 @@
             </div>
         </div>
         <div class="formation master-un">
-            <div class="formation-img">
+            <div class="formation-img animate-on-scroll">
                 <img src="../assets/educations-imgs/logo-3il.png" alt="">
             </div>
-            <div class="formation-details">
+            <div class="formation-details animate-on-scroll">
                 <h2>2023 / 2025</h2>
                 <h1>Master 1 MS2D</h1>
                 <h2>"Manager de  Solution Digital et Data"</h2>
@@ -207,5 +207,11 @@ export default {
     .animate-on-scroll.is-visible {
         opacity: 1;
         transform: translateY(0);
+    }
+
+    /********************** Responsive *************************/
+
+    @media (max-width: 768px) {
+        
     }
 </style>

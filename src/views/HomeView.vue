@@ -88,7 +88,7 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: #1A1919;
+      background: rgb(26, 25, 25, 0.5);
       color: white;
       border-radius: 10px;
       padding: 5px 5px 5px 5px;
@@ -192,39 +192,87 @@ export default {
 
 @media (max-width: 880px) {
   .home {
+    height: auto;
     flex-direction: column;
   }
 
   .div-img-and-years {
     width: 100%;
+    height: 55vh;
+    position: inherit;
   
     .div-img {
       width: 100%;
       position: relative;
   
       img {
-        width: 100%;
         position: absolute;
         top: -2rem;
         left: -130px;
       }
   
       .experience-years {
-        position: absolute;
         top: 14rem;
         left: 58%;
-        width: auto;
-        height: auto;
-        display: flex;
-        flex-direction: columns;
-        justify-content: space-between;
-        background: rgb(26, 25, 25, 0.5);
+      }
+    }
+  }
+
+  .div-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 10rem 0 0;
+    border: #1A1919 solid 1px;
+  
+    .my-name {
+      line-height: 0;
+  
+      h1 {
+        font-size: 5rem;
+        letter-spacing: 15px;
+      }
+  
+      h2 {
+        margin: 0 0 0 5px;
+      }
+  
+      .brice {
+        margin: 40px 0 65px 0;
+        
+      }
+  
+      .nogue {
+        margin: 0 0 60px 0;
+      }
+  
+      .alpha {
+        margin: 40px 0 60px 0;
+      }
+    }
+  
+    .about-p {
+      letter-spacing: 0.1px;
+    }
+  
+    .div-btn {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+  
+      .btn-HireMe {
+        width: 150px;
+        height: 40px;
+        background: #2F2BF6;
+        border-radius: 25px;
+        font-size: 18px;
         color: white;
-        border-radius: 10px;
-        padding: 5px 5px 5px 5px;
+        margin-top: 60px;
       }
     }
   }
 }
-
 </style>

@@ -5,7 +5,7 @@
         <img src="@/assets/profil.png" alt="">
 
         <div class="experience-years">
-          <h1>+02</h1>
+          <h1>+02 </h1>
           <h3>Années d'expérience</h3>
         </div>
       </div>
@@ -83,8 +83,8 @@ export default {
       position: absolute;
       top: 65%;
       left: 90%;
-      width: 160px;
-      height: 60px;
+      width: auto;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -187,4 +187,44 @@ export default {
     }
   }
 }
+
+/************************** Responsive **************************/
+
+@media (max-width: 880px) {
+  .home {
+    flex-direction: column;
+  }
+
+  .div-img-and-years {
+    width: 100%;
+  
+    .div-img {
+      width: 100%;
+      position: relative;
+  
+      img {
+        width: 100%;
+        position: absolute;
+        top: -2rem;
+        left: -130px;
+      }
+  
+      .experience-years {
+        position: absolute;
+        top: 14rem;
+        left: 58%;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: columns;
+        justify-content: space-between;
+        background: rgb(26, 25, 25, 0.5);
+        color: white;
+        border-radius: 10px;
+        padding: 5px 5px 5px 5px;
+      }
+    }
+  }
+}
+
 </style>

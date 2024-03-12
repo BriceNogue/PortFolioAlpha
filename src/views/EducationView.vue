@@ -211,7 +211,7 @@ export default {
 
     /********************** Responsive *************************/
 
-    @media (max-width: 768px) {
+    @media (max-width: 880px) {
         .div-container {
             display: flex;
             flex-direction: column;
@@ -219,7 +219,7 @@ export default {
         }
 
         .div-top {
-            padding: 0;
+            padding: 1rem;
             background-size: contain;
     
             .div-1 {
@@ -227,7 +227,7 @@ export default {
             }
     
             .div-2 {
-                padding: 1rem 1rem 1rem 1rem;
+                padding: 0.5rem;
             }
     
             h1 {

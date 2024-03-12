@@ -212,9 +212,15 @@ export default {
     /********************** Responsive *************************/
 
     @media (max-width: 768px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .div-top {
-            padding: 0rem;
-            background-position: center;
+            padding: 0;
+            background-size: contain;
     
             .div-1 {
                 padding: 3px;
@@ -225,12 +231,51 @@ export default {
             }
     
             h1 {
-                font-size: 3rem;
+                font-size: 4rem;
             }
     
             h2 {
                 font-size: 14px;
             }
+        }
+
+        .formation {
+            width: 90%;
+            height: auto;
+            padding: 1rem;
+            display: block;
+            border: grey solid 1px;
+            margin: 0 0 3rem 0;
+    
+            div {
+                width: 100%;
+                align-items: center;
+    
+                h1 {
+                    font-size: 1.5rem;
+                }
+    
+                h2 {
+                    font-size: 20px;
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+    
+            .acquis {
+                width: 100%;
+    
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .bachelor {
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 </style>

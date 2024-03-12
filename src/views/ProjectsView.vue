@@ -16,14 +16,14 @@
                 </div>
                 <div>
                     <h1>Plateforme Appli...</h1>
-                    <p>Projet académique</p>
+                    <p>Proj académique</p>
                     <h2>Encours...</h2>
                 </div>
                 <div>
                     <a>GitHub</a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project hover:scale-110">
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
@@ -36,7 +36,7 @@
                     <a>GitHub</a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project hover:scale-110">
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
@@ -49,7 +49,7 @@
                     <a>GitHub</a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project hover:scale-110">
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
@@ -62,7 +62,7 @@
                     <a>GitHub</a>
                 </div>
             </div>
-            <div class="project">
+            <div class="project hover:scale-110">
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
@@ -184,6 +184,46 @@ export default {
             .projects-img {
                 width: 100%;
                 padding: 5rem 0 5rem 0;
+            }
+        }
+
+        .projects {
+            padding: 2rem 0 5rem 0;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem;
+    
+            .project {
+                width: 150px;
+                height: 260px;
+                box-shadow: 1px 1px 10px #93c5fd;
+                padding: 20px 10px 20px 10px;
+                border-radius: 10px;
+                text-align: center;
+                background: white;
+                transition: 0.3s;
+    
+                h1 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 10px;
+                }
+    
+                h2 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: green;
+                    margin-bottom: 10px;
+                }
+    
+                a {
+                    text-decoration: none;
+                    font-size: 18px;
+                    background: #2563eb;
+                    color: white;
+                    font-weight: 500;
+                    padding: 5px 20px 5px 20px;
+                    border-radius: 25px;
+                }
             }
         }
     }

@@ -3,26 +3,27 @@
       <header  ref="header" class="hidden md:block">
         <div class="nav-bar">
           <div class="logo">
-            <a to="/">
-              <img src="../assets/LogoAlpha-B.png" alt="">
-            </a>
+            <router-link to="/">
+              <img class="logo-B" src="../assets/LogoAlpha-B.png" alt="">
+              <img class="logo-N" src="../assets/LogoAlpha-N.png" alt="">
+            </router-link>
           </div>  
           <nav>
-            <router-link class="nav-link" to="/">Home</router-link>
-            <router-link class="nav-link" to="/education">Education</router-link>
-            <router-link class="nav-link" to="/skills">Skills</router-link>
-            <router-link class="nav-link" to="/experiences">Experiences</router-link>
-            <router-link class="nav-link" to="/projects">Projects</router-link>
+            <router-link class="nav-link" to="/">Accueil</router-link>
+            <router-link class="nav-link" to="/education">Formations</router-link>
+            <router-link class="nav-link" to="/skills">Compétences</router-link>
+            <router-link class="nav-link" to="/experiences">Expérience</router-link>
+            <router-link class="nav-link" to="/projects">Projets</router-link>
           </nav>
           <div class="hidden md:block">
-            <button class="btn-contact bg-blue-600 text-white">Contact me</button>
+            <button class="btn-contact bg-blue-600 text-white hover:scale-105">Contact me</button>
           </div>
         </div>
       </header>
 
       <!--Mobile-->
   
-      <div class="side-nav hidden md:hidden">
+      <div class="side-nav hidden md:hidden" ref="sideNav" id="side-nav">
         <div class="side-nav-header">
           <div class="logo">
             <a to="/">
@@ -35,13 +36,13 @@
             <span class="bottom"></span>
           </div>
         </div>
-        <div ref="sideNav" class="hidden sideNav">
+        <div class="sideMenu" ref="sideMenu">
           <nav>
-            <router-link class="side-nav-link" to="/">About me</router-link>
-            <router-link class="side-nav-link" to="/education">Education</router-link>
-            <router-link class="side-nav-link" to="/skills">Skills</router-link>
-            <router-link class="side-nav-link" to="/experiences">Experiences</router-link>
-            <router-link class="side-nav-link" to="/projects">Projects</router-link>
+            <router-link class="side-nav-link" to="/" @click="toggleSide">Accueil</router-link>
+            <router-link class="side-nav-link" to="/education" @click="toggleSide">Formations</router-link>
+            <router-link class="side-nav-link" to="/skills" @click="toggleSide">Compétences</router-link>
+            <router-link class="side-nav-link" to="/experiences" @click="toggleSide">Expérience</router-link>
+            <router-link class="side-nav-link" to="/projects" @click="toggleSide">Projets</router-link>
           </nav>
           <div class="nav-btn">
             <button class="btn-contact bg-blue-600 text-white">Contact me</button>
@@ -74,16 +75,17 @@ export default {
     methods: {
       handleScroll() {
         if (window.scrollY > 150) {
-          this.$refs.header.classList.add('onScroll');
+          //this.$refs.header.classList.add('onScroll');
         } else {
           this.$refs.header.classList.remove('onScroll');
         }
       },
 
       toggleSide() {
-          this.$refs.sideNavBtn.classList.toggle('active');
-          this.$refs.sideNav.classList.toggle('opened');
-      }
+        this.$refs.sideNavBtn.classList.toggle('active');
+        this.$refs.sideNav.classList.toggle('opened');
+        this.$refs.sideMenu.classList.toggle('opened');
+      },
     },
 };
 </script>
@@ -91,14 +93,26 @@ export default {
 <style lang="scss" scoped>
 header {
   width: 100%;
-  position: fixed;
+  position: absolute;
   background: transparent;
   z-index: 1;
   transition: all 300ms ease-in-out;
+
+  .logo-B {
+    display: none;
+  }
 }
 
 header.onScroll {
-  //background: opacify($color: #000000, $amount: 1);
+  background: opacify($color: white, $amount: 1);
+
+  .logo-B {
+    display: none;
+  }
+
+  .logo-N {
+    display: block;
+  }
 }
 
 .nav-bar {
@@ -106,12 +120,12 @@ header.onScroll {
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0 5rem 0 5rem;
+  padding: 0 10rem 0 10rem;
   align-items: center;  
 }
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 
     img {
         width: 100%;
@@ -123,7 +137,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     font-size: 18px;
-    color: #1A1919;
+    color: #1E293B;
     font-weight: 500;
     text-indent: 15px;
   }
@@ -142,53 +156,64 @@ nav {
   height: 40px;
   border-radius: 25px;
   font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-  .nav-bar {
-    justify-content: space-between;
-    background: white;
-    padding: 0 15px 0px 15px;
+  .side-nav.opened {
+    position: fixed;
   }
 
   .side-nav {
-    width: 100%;
-    height: 100vh;
     margin: 0;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    transform: scale();
-    transition: all 300ms ease-in-out;
+    display: inherit;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 
     .side-nav-header {
       width: 100%;
       height: 80px;
-      background: beige;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 15px 0 15px;
+      position: relative;
+      z-index: 1;
     }
 
-    .sideNav.opened {
-      display: block; 
+    .sideMenu {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 0px;
+      overflow: hidden;
+      display: flex;
+      padding: 5rem 0 0 0;
+      flex-direction: column;
+      align-items: center;
+      transition: 0.5s;
     }
 
     nav {
+      margin: 0 0 2rem 0;
       .side-nav-link {
-        display: flex;
+        display: block;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 10px 10px;
         font-size: 18px;
-        color: #1A1919;
+        color: #1E293B;
         font-weight: 500;
       }
+    }
+
+    .sideMenu.opened {
+      height: 100vh;
+      background: white;
     }
   }
 

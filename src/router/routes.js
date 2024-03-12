@@ -19,19 +19,19 @@ const allRoutes = [{
         path: '/education',
         name: 'education',
         component: EducationView,
-        meta: { layout: ProjectsLayout }
+        meta: { layout: AboutLayout }
     },
     {
         path: '/skills',
         name: 'skills',
         component: SkillsView,
-        meta: { layout: ProjectsLayout }
+        meta: { layout: AboutLayout }
     },
     {
         path: '/experiences',
         name: 'experiences',
         component: ExperiencesView,
-        meta: { layout: ProjectsLayout }
+        meta: { layout: AboutLayout }
     },
     {
         path: '/projects',

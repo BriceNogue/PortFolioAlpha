@@ -5,24 +5,24 @@
         <img src="@/assets/profil.png" alt="">
 
         <div class="experience-years">
-          <h1>+02</h1>
+          <h1>+02 </h1>
           <h3>Années d'expérience</h3>
         </div>
       </div>
     </div>
     <div class="div-info">
       <div class="my-name">
-        <h2 class="h-my-name">My name is</h2>
+        <h2 class="h-my-name">Je suis</h2>
         <h1 class="brice">Brice</h1>
         <h1 class="nogue"><b>NOGUE</b></h1>
-        <h2>Commnonly known as</h2>
+        <h2>Souvent appelé</h2>
         <h1 class="alpha"><b>ALPHA</b></h1>
       </div>
       <div>
-        <p class="about-p">Fullstack developer and 4th  year univerity students</p>
+        <p class="about-p">Développeur Full Stack et étudiants en Mastrer un</p>
       </div>
       <div class="div-btn">
-        <button class="btn-HireMe">Hire me</button>
+        <button class="btn-HireMe">Mon CV</button>
       </div>
       <!--<div class="div-skils">
         <div class="javascript">
@@ -83,12 +83,12 @@ export default {
       position: absolute;
       top: 65%;
       left: 90%;
-      width: 160px;
-      height: 60px;
+      width: auto;
+      height: auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      background: #1A1919;
+      background: rgb(26, 25, 25, 0.5);
       color: white;
       border-radius: 10px;
       padding: 5px 5px 5px 5px;
@@ -104,7 +104,7 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 5rem 0 0;
+  padding: 0 10rem 0 0;
 
   .my-name {
     line-height: 0;
@@ -144,7 +144,7 @@ export default {
     .btn-HireMe {
       width: 150px;
       height: 40px;
-      background: #2F2BF6;
+      background: #2563eb;
       border-radius: 25px;
       font-size: 18px;
       color: white;
@@ -184,6 +184,85 @@ export default {
       width: 80px;
       background: #1A1919;
       color: white;
+    }
+  }
+}
+
+/************************** Responsive **************************/
+
+@media (max-width: 880px) {
+  .home {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .div-img-and-years {
+    width: 100%;
+    height: 55vh;
+    position: inherit;
+  
+    .div-img {
+      width: 100%;
+      position: relative;
+  
+      img {
+        position: absolute;
+        top: -3rem;
+        left: -8rem;
+      }
+  
+      .experience-years {
+        top: 14rem;
+        left: 58%;
+      }
+    }
+  }
+
+  .div-info {
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+    padding: 0 2rem 2rem 2rem;
+  
+    .my-name {
+      line-height: 0;
+  
+      h1 {
+        font-size: 3rem;
+        letter-spacing: 5px;
+      }
+  
+      .brice {
+        margin: 40px 0 40px 0;
+        
+      }
+  
+      .nogue {
+        margin: 0 0 40px 0;
+      }
+  
+      .alpha {
+        margin: 40px 0 40px 0;
+      }
+    }
+  
+    .about-p {
+      letter-spacing: 0.3px;
+      font-size: 15px;
+    }
+  
+    .div-btn {
+      justify-content: center;
+  
+      .btn-HireMe {
+        width: 200px;
+        height: 40px;
+        background: #2F2BF6;
+        border-radius: 25px;
+        font-size: 18px;
+        color: white;
+        margin-top: 30px;
+      }
     }
   }
 }

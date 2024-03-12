@@ -212,6 +212,25 @@ export default {
     /********************** Responsive *************************/
 
     @media (max-width: 768px) {
-        
+        .div-top {
+            padding: 0rem;
+            background-position: center;
+    
+            .div-1 {
+                padding: 3px;
+            }
+    
+            .div-2 {
+                padding: 1rem 1rem 1rem 1rem;
+            }
+    
+            h1 {
+                font-size: 3rem;
+            }
+    
+            h2 {
+                font-size: 14px;
+            }
+        }
     }
 </style>

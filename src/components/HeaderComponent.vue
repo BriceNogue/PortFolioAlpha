@@ -23,7 +23,7 @@
 
       <!--Mobile-->
   
-      <div class="side-nav hidden md:hidden">
+      <div class="side-nav hidden md:hidden" ref="sideNav">
         <div class="side-nav-header">
           <div class="logo">
             <a to="/">
@@ -36,7 +36,7 @@
             <span class="bottom"></span>
           </div>
         </div>
-        <div ref="sideNav" class="hidden sideNav">
+        <div class="sideMenu" ref="sideMenu">
           <nav>
             <router-link class="side-nav-link" to="/">About me</router-link>
             <router-link class="side-nav-link" to="/education">Education</router-link>
@@ -84,6 +84,7 @@ export default {
       toggleSide() {
           this.$refs.sideNavBtn.classList.toggle('active');
           this.$refs.sideNav.classList.toggle('opened');
+          this.$refs.sideMenu.classList.toggle('opened');
       }
     },
 };
@@ -160,43 +161,47 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .nav-bar {
-    justify-content: space-between;
-    background: white;
-    padding: 0 15px 0px 15px;
+  .side-nav.opened {
+    position: fixed;
   }
 
   .side-nav {
-    width: 100%;
-    height: 100vh;
     margin: 0;
-    display: flex;
-    position: fixed;
-    flex-direction: column;
-    align-items: center;
-    background: white;
-    transform: scale();
-    transition: all 300ms ease-in-out;
+    display: inherit;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 
     .side-nav-header {
       width: 100%;
       height: 80px;
-      background: beige;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 0 15px 0 15px;
+      position: relative;
+      z-index: 1;
     }
 
-    .sideNav.opened {
-      display: block; 
+    .sideMenu {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 0px;
+      overflow: hidden;
+      display: flex;
+      padding: 5rem 0 0 0;
+      flex-direction: column;
+      align-items: center;
+      transition: 0.5s;
     }
 
     nav {
+      margin: 0 0 2rem 0;
       .side-nav-link {
-        display: flex;
+        display: block;
         flex-direction: column;
-        align-items: center;
+        text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 10px 10px;
@@ -204,6 +209,11 @@ nav {
         color: #1E293B;
         font-weight: 500;
       }
+    }
+
+    .sideMenu.opened {
+      height: 100vh;
+      background: white;
     }
   }
 

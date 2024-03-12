@@ -144,7 +144,7 @@ export default {
     .btn-HireMe {
       width: 150px;
       height: 40px;
-      background: #2F2BF6;
+      background: #2563eb;
       border-radius: 25px;
       font-size: 18px;
       color: white;
@@ -208,7 +208,7 @@ export default {
       img {
         position: absolute;
         top: -3rem;
-        left: -130px;
+        left: -8rem;
       }
   
       .experience-years {
@@ -255,7 +255,7 @@ export default {
       justify-content: center;
   
       .btn-HireMe {
-        width: 150px;
+        width: 200px;
         height: 40px;
         background: #2F2BF6;
         border-radius: 25px;

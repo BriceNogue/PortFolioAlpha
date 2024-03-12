@@ -175,15 +175,15 @@ export default {
     
             .projects-title {
                 width: 100%;
+                text-align: center;
                 h1 {
                     font-size: 2rem;
-                    font-weight: bold;
-                    text-align: justify;
                 }
             }
     
             .projects-img {
                 width: 100%;
+                padding: 5rem 0 5rem 0;
             }
         }
     }

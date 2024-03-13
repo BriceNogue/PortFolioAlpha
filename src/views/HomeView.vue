@@ -202,7 +202,7 @@ export default {
     
     .div-img {
       width: 100%;
-      height: 50vh;
+      height: 52vh;
 
       img {
         position: absolute;
@@ -212,15 +212,20 @@ export default {
   
       .experience-years {
         display: inherit;
+        width: 130px;
         top: 55%;
-        left: 55%;
+        left: 57%;
+
+        h1, h3 {
+          font-size: 13px;
+        }
       }
     }
   }
 
   .div-info {
     width: 100%;
-    height: 50vh;
+    height: auto;
     justify-content: inherit;
     align-items: flex-start;
     padding: 2rem;

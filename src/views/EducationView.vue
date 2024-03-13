@@ -219,7 +219,7 @@ export default {
         }
 
         .div-top {
-            padding: 1rem;
+            padding: 5rem;
             background-size: contain;
     
             .div-1 {

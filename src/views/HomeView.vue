@@ -190,7 +190,7 @@ export default {
 
 /************************** Responsive **************************/
 
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
   .home {
     height: auto;
     flex-direction: column;
@@ -198,13 +198,12 @@ export default {
 
   .div-img-and-years {
     width: 100%;
-    height: 55vh;
-    position: inherit;
-  
+    height: auto;
+    
     .div-img {
       width: 100%;
-      position: relative;
-  
+      height: 50vh;
+
       img {
         position: absolute;
         top: -3rem;
@@ -212,17 +211,19 @@ export default {
       }
   
       .experience-years {
-        top: 14rem;
-        left: 58%;
+        display: inherit;
+        top: 55%;
+        left: 55%;
       }
     }
   }
 
   .div-info {
     width: 100%;
-    height: auto;
+    height: 50vh;
+    justify-content: inherit;
     align-items: flex-start;
-    padding: 0 2rem 2rem 2rem;
+    padding: 2rem;
   
     .my-name {
       line-height: 0;
@@ -256,11 +257,6 @@ export default {
   
       .btn-HireMe {
         width: 200px;
-        height: 40px;
-        background: #2F2BF6;
-        border-radius: 25px;
-        font-size: 18px;
-        color: white;
         margin-top: 30px;
       }
     }

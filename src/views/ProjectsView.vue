@@ -190,10 +190,10 @@ export default {
         .projects {
             padding: 2rem 0 5rem 0;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 2rem;
+            gap: 1.5rem;
     
             .project {
-                width: 150px;
+                width: 100%;
                 height: 260px;
                 box-shadow: 1px 1px 10px #93c5fd;
                 padding: 20px 10px 20px 10px;

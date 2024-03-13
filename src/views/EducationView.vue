@@ -227,11 +227,11 @@ export default {
             }
     
             .div-2 {
-                padding: 0.5rem;
+                padding: 1rem;
             }
     
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
             }
     
             h2 {

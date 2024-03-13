@@ -165,7 +165,7 @@ export default {
 
     /****************************** Responsive *********************************/
 
-    @media (max-width: 880px) {
+    @media (min-width: 320px) and (max-width: 768px) {
         .div-container {
             padding: 5rem 2rem 2rem 2rem;
         }

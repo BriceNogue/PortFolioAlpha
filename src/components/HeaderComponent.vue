@@ -148,6 +148,7 @@ nav {
 
   .router-link-exact-active {
     font-size: 28px;
+    color: blue;
   }
 }
 
@@ -258,6 +259,26 @@ nav {
     margin: 0;
     top: 0px;
 }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    padding: 0 2rem 0 2rem; 
+  }
+
+  nav {
+    .nav-link {
+      font-size: 15px;
+    }
+  
+    .nav-link:hover {
+      color: inherit;
+    }
+  
+    .router-link-exact-active {
+      font-size: 20px;
+    }
+  }
 }
 
 </style>

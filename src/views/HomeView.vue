@@ -83,7 +83,7 @@ export default {
       position: absolute;
       top: 65%;
       left: 90%;
-      width: auto;
+      width: 160px;
       height: auto;
       display: flex;
       flex-direction: column;
@@ -190,7 +190,7 @@ export default {
 
 /************************** Responsive **************************/
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   .home {
     height: auto;
     flex-direction: column;

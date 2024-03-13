@@ -147,7 +147,7 @@ export default {
 
         h1 {
             font-size: 7rem;
-            font-weight: bold; 
+            font-weight: bold;
         }
 
         h2 {
@@ -211,7 +211,7 @@ export default {
 
     /********************** Responsive *************************/
 
-    @media (max-width: 880px) {
+    @media (min-width: 320px) and (max-width: 768px) {
         .div-container {
             display: flex;
             flex-direction: column;

@@ -212,7 +212,7 @@ export default {
   
       .experience-years {
         display: inherit;
-        width: 130px;
+        width: 140px;
         top: 55%;
         left: 57%;
 

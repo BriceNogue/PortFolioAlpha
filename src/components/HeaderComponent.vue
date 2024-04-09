@@ -9,11 +9,11 @@
             </router-link>
           </div>  
           <nav>
-            <router-link class="nav-link" to="/">Accueil</router-link>
-            <router-link class="nav-link" to="/education">Formations</router-link>
-            <router-link class="nav-link" to="/skills">Compétences</router-link>
-            <router-link class="nav-link" to="/experiences">Expérience</router-link>
-            <router-link class="nav-link" to="/projects">Projets</router-link>
+            <router-link class="nav-link" to="/">About me</router-link>
+            <router-link class="nav-link" to="/education">Education</router-link>
+            <router-link class="nav-link" to="/skills">Skills</router-link>
+            <router-link class="nav-link" to="/experiences">Experiences</router-link>
+            <router-link class="nav-link" to="/projects">Projects</router-link>
           </nav>
           <div class="hidden md:block">
             <button class="btn-contact bg-blue-600 text-white hover:scale-105">Contact me</button>

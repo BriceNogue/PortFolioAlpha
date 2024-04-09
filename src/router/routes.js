@@ -1,5 +1,5 @@
 // Views...
-import HomeView from '@/views/HomeView.vue';
+import AboutView from '@/views/AboutView.vue';
 import ProjectsView from '@/views/ProjectsView.vue';
 import EducationView from '@/views/EducationView.vue';
 import SkillsView from '@/views/SkillsView.vue';
@@ -12,7 +12,7 @@ import ProjectsLayout from '@/layouts/ProjectsLayout.vue';
 const allRoutes = [{
         path: '/',
         name: 'about_me',
-        component: HomeView,
+        component: AboutView,
         meta: { layout: AboutLayout }
     },
     {

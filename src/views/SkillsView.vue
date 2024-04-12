@@ -13,36 +13,52 @@
                 <hr>
             </div>
             <div class="skills languages">
-                <div class="language">
-                    <div class="language-img">
+                <div class="skill">
+                    <div class="skill-img">
                         <img src="@/assets/skills-imgs/csharp.png" alt="Csharp">
                     </div>
-                    <div class="language-name">
+                    <div class="skill-name">
                         <h4>Csharp</h4>
                     </div>
                 </div>
-                <div class="language">
-                    <div class="language-img">
+                <div class="skill">
+                    <div class="skill-img">
                         <img src="@/assets/skills-imgs/java.png" alt="Java">
                     </div>
-                    <div class="language-name">
+                    <div class="skill-name">
                         <h4>Java</h4>
                     </div>
                 </div>
-                <div class="language">
-                    <div class="language-img">
+                <div class="skill">
+                    <div class="skill-img">
                         <img src="@/assets/skills-imgs/javascript.png" alt="javascript">
                     </div>
-                    <div class="language-name">
+                    <div class="skill-name">
                         <h4>JavaScript</h4>
                     </div>
                 </div>
-                <div class="language">
-                    <div class="language-img">
+                <div class="skill">
+                    <div class="skill-img">
                         <img src="@/assets/skills-imgs/typescript.png" alt="typescript">
                     </div>
-                    <div class="language-name">
+                    <div class="skill-name">
                         <h4>TypeScript</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img">
+                        <img src="@/assets/skills-imgs/HTML5.png" alt="html 5">
+                    </div>
+                    <div class="skill-name">
+                        <h4>HTML 5</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img" style="padding: 15px;">
+                        <img src="@/assets/skills-imgs/css-3.png" alt="css 5">
+                    </div>
+                    <div class="skill-name">
+                        <h4>CSS 3</h4>
                     </div>
                 </div>
             </div>
@@ -51,7 +67,70 @@
                 <hr>
             </div>
             <div class="skills frameworks">
-                
+                <div class="skill">
+                    <div class="skill-img">
+                        <img src="@/assets/skills-imgs/angular.png" alt="angular">
+                    </div>
+                    <div class="skill-name">
+                        <h4>Angular</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img">
+                        <img src="@/assets/skills-imgs/vue-js.png" alt="vue-js">
+                    </div>
+                    <div class="skill-name">
+                        <h4>Vue.Js</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img">
+                        <img src="@/assets/skills-imgs/blazor.png" alt="blazor">
+                    </div>
+                    <div class="skill-name">
+                        <h4>Blazor</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img maui">
+                        <img src="@/assets/skills-imgs/maui.png" alt="maui">
+                    </div>
+                    <div class="skill-name">
+                        <h4>MAUI</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img wpf">
+                        <img src="@/assets/skills-imgs/wpf.png" alt="wpf">
+                    </div>
+                    <div class="skill-name">
+                        <h4>WPF</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img asp">
+                        <img src="@/assets/skills-imgs/Asp_Net_Core.png" alt="asp">
+                    </div>
+                    <div class="skill-name">
+                        <h4>ASP.Net Core</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img spring-boot">
+                        <img src="@/assets/skills-imgs/springboot.png" alt="spring-boot">
+                    </div>
+                    <div class="skill-name">
+                        <h4>Spring Boot</h4>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-img node-js">
+                        <img src="@/assets/skills-imgs/node-js.png" alt="node.js">
+                    </div>
+                    <div class="skill-name">
+                        <h4>Node.Js</h4>
+                    </div>
+                </div>
             </div>
             <div class="skills sgbdrs">
                 
@@ -153,6 +232,11 @@ export default {
     gap: 15px;
     padding: 2rem 0 2rem 0;
 
+    h1 {
+        font-size: larger;
+        font-weight: 600;
+    }
+
     hr {
         width: 100%;
         height: 2px;
@@ -160,7 +244,7 @@ export default {
     }
 }
 
-.language {
+.skill {
     width: 17.2%;
     height: 10rem;
     display: flex;
@@ -169,7 +253,7 @@ export default {
     position: relative;
 }
 
-.language-img {
+.skill-img {
     width: 50%;
     height: 50%;
     border-radius: 50%;
@@ -178,7 +262,7 @@ export default {
     align-items: center;
 }
 
-.language-name {
+.skill-name {
     display: flex;
     position: absolute;
     bottom: 0;

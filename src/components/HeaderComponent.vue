@@ -9,7 +9,7 @@
             </router-link>
           </div>  
           <nav>
-            <router-link class="nav-link" to="/">About me</router-link>
+            <router-link class="nav-link" to="/">Home</router-link>
             <router-link class="nav-link" to="/education">Education</router-link>
             <router-link class="nav-link" to="/skills">Skills</router-link>
             <router-link class="nav-link" to="/experiences">Experiences</router-link>

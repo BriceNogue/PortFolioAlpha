@@ -168,6 +168,8 @@ export default {
 .div-container {
     width: 100%;
     min-height: 100vh;
+    background-image: linear-gradient(white 0.9px, transparent 0.9px), linear-gradient(to right, white 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
+    background-size: 18px 18px;
 }
 
 .div-top {
@@ -187,6 +189,7 @@ export default {
         position: absolute;
         top: 30%;
         left: 40%;
+        z-index: -1;
     }
 
     h1 {

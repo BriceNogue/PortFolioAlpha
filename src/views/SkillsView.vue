@@ -1,9 +1,8 @@
 <template>
-    <div class="container">
+    <div class="div-container">
         <div class="div-top">
             <h1>Skills</h1>
             <p>What about my skills ?</p>
-            <img src="@/assets/skills-imgs/fond-nerf.png" alt="fd">
             <div class="blur">
             </div>
         </div>
@@ -166,7 +165,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
+.div-container {
     width: 100%;
     min-height: 100vh;
 }
@@ -178,17 +177,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
     gap: 0;
-
-    img {
-        width: 100%;
-        position: absolute;
-        top: 15%;
-        left: 0%;
-        z-index: 1;
-        opacity: 30%;
-    }
 
     .blur {
         width: 20rem;
@@ -209,6 +198,7 @@ export default {
     p {
         font-size: 18px;
         font-weight: 600;
+        line-height: 0;
     }
 }
 

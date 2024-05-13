@@ -185,7 +185,7 @@ export default {
         width: 20rem;
         height: 20rem;
         background: blue;
-        filter: blur(150px);
+        filter: blur(100px);
         position: absolute;
         top: 30%;
         left: 40%;
@@ -195,13 +195,14 @@ export default {
     h1 {
         font-size: 15rem;
         font-weight: bold;       
-        color: black;
+        color: #454545;
     }
 
     p {
         font-size: 18px;
         font-weight: 600;
         line-height: 0;
+        color: #454545;
     }
 }
 

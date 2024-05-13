@@ -3,12 +3,13 @@
       <header  ref="header" class="hidden md:block">
         <div class="nav-bar">
           <div class="logo">
-            <router-link to="/">
+            <router-link to="/" class="logo-link">
               <img class="logo-B" src="../assets/LogoAlpha-B.png" alt="">
               <img class="logo-N" src="../assets/LogoAlpha-N.png" alt="">
+              <p>lpha</p>
             </router-link>
           </div>  
-          <nav>
+          <nav class="nav-links">
             <router-link class="nav-link" to="/">Home</router-link>
             <router-link class="nav-link" to="/education">Education</router-link>
             <router-link class="nav-link" to="/skills">Skills</router-link>
@@ -98,7 +99,7 @@ header {
   z-index: 1;
   transition: all 300ms ease-in-out;
 
-  .logo-B {
+  .logo-N {
     display: none;
   }
 }
@@ -124,19 +125,36 @@ header.onScroll {
   align-items: center;  
 }
 .logo {
-    width: 40px;
-    height: 40px;
 
     img {
-        width: 100%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-link {
+      display: flex;
+      align-items: end;
+
+      p {
+        font-size: 15px;
+        color: white;
+        letter-spacing: 5px;
+      }
     }
 }
 
 nav {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  border: solid 1px lightgrey;
+  background: rgb(26, 25, 25, 0.1);
+  padding: 10px;
+  border-radius: 25px;
+  
   .nav-link {
-    display: inline-block;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: #1E293B;
     font-weight: 500;
     text-indent: 15px;
@@ -147,8 +165,9 @@ nav {
   }
 
   .router-link-exact-active {
-    font-size: 28px;
-    color: blue;
+    font-size: 15px;
+    color: dodgerblue;
+    text-decoration: underline;
   }
 }
 

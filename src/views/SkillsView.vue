@@ -3,17 +3,22 @@
         <div class="div-top">
             <h1>Skills</h1>
             <p>What about my skills ?</p>
-            <div class="blur">
+            <div class="blur blur_0">
+            </div>
+            <div class="blur blur_1">
+            </div>
+            <div class="blur blur_2">
             </div>
         </div>
-        <div class="skills-list">
+        <div class="skills-list" id="skills-list">
             <div class="skills-title">
                 <h1>Languages</h1>
                 <hr>
             </div>
             <div class="skills languages">
                 <div class="skill">
-                    <div class="skill-img">
+                    <div class="skill-img Csharp">
+                        <div class="skill-img-2 Csharp-2" ref="light" id="si_2"></div>
                         <img src="@/assets/skills-imgs/csharp.png" alt="Csharp">
                     </div>
                     <div class="skill-name">
@@ -22,6 +27,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2" ref="light"></div>
                         <img src="@/assets/skills-imgs/java.png" alt="Java">
                     </div>
                     <div class="skill-name">
@@ -30,6 +36,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/javascript.png" alt="javascript">
                     </div>
                     <div class="skill-name">
@@ -38,6 +45,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/typescript.png" alt="typescript">
                     </div>
                     <div class="skill-name">
@@ -46,6 +54,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/HTML5.png" alt="html 5">
                     </div>
                     <div class="skill-name">
@@ -53,7 +62,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img" style="padding: 15px;">
+                    <div class="skill-img" style="padding: 30px;">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/css-3.png" alt="css 5">
                     </div>
                     <div class="skill-name">
@@ -68,6 +78,7 @@
             <div class="skills frameworks">
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/angular.png" alt="angular">
                     </div>
                     <div class="skill-name">
@@ -76,6 +87,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/vue-js.png" alt="vue-js">
                     </div>
                     <div class="skill-name">
@@ -84,6 +96,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/blazor.png" alt="blazor">
                     </div>
                     <div class="skill-name">
@@ -92,6 +105,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img maui">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/maui.png" alt="maui">
                     </div>
                     <div class="skill-name">
@@ -100,6 +114,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img wpf">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/wpf.png" alt="wpf">
                     </div>
                     <div class="skill-name">
@@ -108,6 +123,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img asp">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/Asp_Net_Core.png" alt="asp">
                     </div>
                     <div class="skill-name">
@@ -116,6 +132,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img spring-boot">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/springboot.png" alt="spring-boot">
                     </div>
                     <div class="skill-name">
@@ -124,6 +141,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img node-js">
+                        <div class="skill-img-2"></div>
                         <img src="@/assets/skills-imgs/node-js.png" alt="node.js">
                     </div>
                     <div class="skill-name">
@@ -150,16 +168,29 @@ export default {
 
     data() {
         return {
-            
+            timer1: null,
+            timer2: null
         };
     },
 
     mounted() {
-        
+        this.timer1 = setInterval(this.startLight, 2000);
+        this.timer2 = setInterval(this.stopLight, 4000);
+    },
+
+    beforeDestroy() {
+        clearTimeout(this.timer1);
     },
 
     methods: {
-        
+        startLight() {
+            
+            this.$refs.light.classList.add('skill-light');
+        },
+
+        stopLight() {
+            this.$refs.light.classList.remove('skill-light');
+        }
     },
 };
 </script>
@@ -183,13 +214,29 @@ export default {
 
     .blur {
         width: 20rem;
-        height: 20rem;
-        background: blue;
+        height: 20rem;     
         filter: blur(100px);
         position: absolute;
+        
+    }
+
+    .blur_0 {
+        background: dodgerblue;
+        top: 0;
+        left: 0;
+    }
+
+    .blur_1 {
+        background: blue;
         top: 30%;
         left: 40%;
         z-index: -1;
+    }
+
+    .blur_2 {
+        background: pink;
+        bottom: 0;
+        right: 0;
     }
 
     h1 {
@@ -239,21 +286,41 @@ export default {
 }
 
 .skill {
-    width: 17.2%;
+    width: 10rem;
     height: 10rem;
     display: flex;
+    gap: 100px;
     justify-content: center;
-    align-items: center;
     position: relative;
 }
 
 .skill-img {
-    width: 50%;
-    height: 50%;
+    width: 70%;
+    height: 70%;
+    padding: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    border: solid 1px lightblue;
+
+    .skill-img-2 {
+        position: absolute;
+        border-radius: 50%;
+        width: 70%;
+        height: 70%;
+        background: lightblue;
+        transition: 03s;
+    }
+
+    .skill-light {       
+        scale: 1.5
+    }
+
+    img {
+        z-index: 1;
+    }
 }
 
 .skill-name {

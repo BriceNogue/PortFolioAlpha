@@ -100,6 +100,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+/*
+.blur {
+  height: 12rem;
+  width: 12rem;
+  background-color: var(--primary);
+  filter: blur(100px);
+  border-radius: 100px;
+  z-index: 0;
+  position: absolute;
+}
+*/
+
     .div-container {
         width: 100%;
         //background-image: linear-gradient(to bottom, rgb(252, 219, 219, 0.7), #ffffff), url("../assets/educations-imgs/educations.svg");

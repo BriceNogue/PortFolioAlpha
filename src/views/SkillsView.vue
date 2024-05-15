@@ -18,7 +18,7 @@
             <div class="skills languages">
                 <div class="skill">
                     <div class="skill-img Csharp">
-                        <div class="skill-img-2 Csharp-2" ref="light" id="si_2"></div>
+                        <div class="skill-img-2 Csharp-2" ref="light_0" id="si_2"></div>
                         <img src="@/assets/skills-imgs/csharp.png" alt="Csharp">
                     </div>
                     <div class="skill-name">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <div class="skill-img-2" ref="light"></div>
+                        <div class="skill-img-2" ref="light_1"></div>
                         <img src="@/assets/skills-imgs/java.png" alt="Java">
                     </div>
                     <div class="skill-name">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <div class="skill-img-2"></div>
+                        <div class="skill-img-2" ref="light_2"></div>
                         <img src="@/assets/skills-imgs/javascript.png" alt="javascript">
                     </div>
                     <div class="skill-name">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <div class="skill-img-2"></div>
+                        <div class="skill-img-2" ref="light_3"></div>
                         <img src="@/assets/skills-imgs/typescript.png" alt="typescript">
                     </div>
                     <div class="skill-name">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <div class="skill-img-2"></div>
+                        <div class="skill-img-2" ref="light_4"></div>
                         <img src="@/assets/skills-imgs/HTML5.png" alt="html 5">
                     </div>
                     <div class="skill-name">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img" style="padding: 30px;">
-                        <div class="skill-img-2"></div>
+                        <div class="skill-img-2" ref="light_5"></div>
                         <img src="@/assets/skills-imgs/css-3.png" alt="css 5">
                     </div>
                     <div class="skill-name">
@@ -78,7 +78,7 @@
             <div class="skills frameworks">
                 <div class="skill">
                     <div class="skill-img">
-                        <div class="skill-img-2"></div>
+                        <div class="skill-img-2" ref="light_6"></div>
                         <img src="@/assets/skills-imgs/angular.png" alt="angular">
                     </div>
                     <div class="skill-name">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="skill">
                     <div class="skill-img">
-                        <div class="skill-img-2"></div>
+                        <div class="skill-img-2" ref="light_7"></div>
                         <img src="@/assets/skills-imgs/vue-js.png" alt="vue-js">
                     </div>
                     <div class="skill-name">
@@ -174,8 +174,8 @@ export default {
     },
 
     mounted() {
-        this.timer1 = setInterval(this.startLight, 2000);
-        this.timer2 = setInterval(this.stopLight, 4000);
+        this.timer1 = setInterval(this.startLight, 1500);
+        this.timer2 = setInterval(this.stopLight, 3000);
     },
 
     beforeDestroy() {
@@ -183,13 +183,26 @@ export default {
     },
 
     methods: {
-        startLight() {
-            
-            this.$refs.light.classList.add('skill-light');
+        startLight() {      
+            this.$refs.light_0.classList.add('skill-light');
+            this.$refs.light_1.classList.add('skill-light');
+            this.$refs.light_2.classList.add('skill-light');
+            this.$refs.light_3.classList.add('skill-light');
+            this.$refs.light_4.classList.add('skill-light');
+            this.$refs.light_5.classList.add('skill-light');
+            this.$refs.light_6.classList.add('skill-light');
+            this.$refs.light_7.classList.add('skill-light');
         },
 
         stopLight() {
-            this.$refs.light.classList.remove('skill-light');
+            this.$refs.light_0.classList.remove('skill-light');
+            this.$refs.light_1.classList.remove('skill-light');
+            this.$refs.light_2.classList.remove('skill-light');
+            this.$refs.light_3.classList.remove('skill-light');
+            this.$refs.light_4.classList.remove('skill-light');
+            this.$refs.light_5.classList.remove('skill-light');
+            this.$refs.light_6.classList.remove('skill-light');
+            this.$refs.light_7.classList.remove('skill-light');
         }
     },
 };
@@ -311,7 +324,7 @@ export default {
         width: 70%;
         height: 70%;
         background: lightblue;
-        transition: 03s;
+        transition: 1.5s;
     }
 
     .skill-light {       

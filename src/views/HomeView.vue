@@ -19,7 +19,7 @@
         <h1 class="alpha"><b>ALPHA</b></h1>
       </div>
       <div>
-        <p class="about-p">Développeur Full Stack et étudiants en Mastrer un</p>
+        <p class="about-p">Développeur Full Stack et étudiant en Master un</p>
       </div>
       <div class="div-btn">
         <button class="btn-HireMe">Mon CV</button>

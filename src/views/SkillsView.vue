@@ -26,8 +26,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2" ref="light_1"></div>
+                    <div class="skill-img Java">
+                        <div class="skill-img-2 Java-2" ref="light_1"></div>
                         <img src="@/assets/skills-imgs/java.png" alt="Java">
                     </div>
                     <div class="skill-name">
@@ -35,8 +35,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2" ref="light_2"></div>
+                    <div class="skill-img JS">
+                        <div class="skill-img-2 JS-2" ref="light_2"></div>
                         <img src="@/assets/skills-imgs/javascript.png" alt="javascript">
                     </div>
                     <div class="skill-name">
@@ -44,8 +44,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2" ref="light_3"></div>
+                    <div class="skill-img TS">
+                        <div class="skill-img-2 TS-2" ref="light_3"></div>
                         <img src="@/assets/skills-imgs/typescript.png" alt="typescript">
                     </div>
                     <div class="skill-name">
@@ -53,8 +53,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2" ref="light_4"></div>
+                    <div class="skill-img HTML">
+                        <div class="skill-img-2 HTML-2" ref="light_4"></div>
                         <img src="@/assets/skills-imgs/HTML5.png" alt="html 5">
                     </div>
                     <div class="skill-name">
@@ -62,8 +62,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img" style="padding: 30px;">
-                        <div class="skill-img-2" ref="light_5"></div>
+                    <div class="skill-img CSS" style="padding: 30px;">
+                        <div class="skill-img-2 CSS-2" ref="light_5"></div>
                         <img src="@/assets/skills-imgs/css-3.png" alt="css 5">
                     </div>
                     <div class="skill-name">
@@ -77,8 +77,8 @@
             </div>
             <div class="skills frameworks">
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2" ref="light_6"></div>
+                    <div class="skill-img Angular">
+                        <div class="skill-img-2 Angular-2" ref="light_6"></div>
                         <img src="@/assets/skills-imgs/angular.png" alt="angular">
                     </div>
                     <div class="skill-name">
@@ -86,8 +86,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2" ref="light_7"></div>
+                    <div class="skill-img Vue">
+                        <div class="skill-img-2 Vue-2" ref="light_7"></div>
                         <img src="@/assets/skills-imgs/vue-js.png" alt="vue-js">
                     </div>
                     <div class="skill-name">
@@ -95,8 +95,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img">
-                        <div class="skill-img-2"></div>
+                    <div class="skill-img Blazor">
+                        <div class="skill-img-2 Blazor-2" ref="light_8"></div>
                         <img src="@/assets/skills-imgs/blazor.png" alt="blazor">
                     </div>
                     <div class="skill-name">
@@ -104,8 +104,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img maui">
-                        <div class="skill-img-2"></div>
+                    <div class="skill-img MAUI">
+                        <div class="skill-img-2 MAUI-2" ref="light_9"></div>
                         <img src="@/assets/skills-imgs/maui.png" alt="maui">
                     </div>
                     <div class="skill-name">
@@ -113,8 +113,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img wpf">
-                        <div class="skill-img-2"></div>
+                    <div class="skill-img WPF">
+                        <div class="skill-img-2 WPF-2" ref="light_10"></div>
                         <img src="@/assets/skills-imgs/wpf.png" alt="wpf">
                     </div>
                     <div class="skill-name">
@@ -122,8 +122,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img asp">
-                        <div class="skill-img-2"></div>
+                    <div class="skill-img ASP">
+                        <div class="skill-img-2 ASP-2" ref="light_11"></div>
                         <img src="@/assets/skills-imgs/Asp_Net_Core.png" alt="asp">
                     </div>
                     <div class="skill-name">
@@ -131,8 +131,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img spring-boot">
-                        <div class="skill-img-2"></div>
+                    <div class="skill-img SB">
+                        <div class="skill-img-2 SB-2" ref="light_12"></div>
                         <img src="@/assets/skills-imgs/springboot.png" alt="spring-boot">
                     </div>
                     <div class="skill-name">
@@ -140,8 +140,8 @@
                     </div>
                 </div>
                 <div class="skill">
-                    <div class="skill-img node-js">
-                        <div class="skill-img-2"></div>
+                    <div class="skill-img Node">
+                        <div class="skill-img-2 Node-2" ref="light_13"></div>
                         <img src="@/assets/skills-imgs/node-js.png" alt="node.js">
                     </div>
                     <div class="skill-name">
@@ -192,6 +192,12 @@ export default {
             this.$refs.light_5.classList.add('skill-light');
             this.$refs.light_6.classList.add('skill-light');
             this.$refs.light_7.classList.add('skill-light');
+            this.$refs.light_8.classList.add('skill-light');
+            this.$refs.light_9.classList.add('skill-light');
+            this.$refs.light_10.classList.add('skill-light');
+            this.$refs.light_11.classList.add('skill-light');
+            this.$refs.light_12.classList.add('skill-light');
+            this.$refs.light_13.classList.add('skill-light');
         },
 
         stopLight() {
@@ -203,6 +209,12 @@ export default {
             this.$refs.light_5.classList.remove('skill-light');
             this.$refs.light_6.classList.remove('skill-light');
             this.$refs.light_7.classList.remove('skill-light');
+            this.$refs.light_8.classList.remove('skill-light');
+            this.$refs.light_9.classList.remove('skill-light');
+            this.$refs.light_10.classList.remove('skill-light');
+            this.$refs.light_11.classList.remove('skill-light');
+            this.$refs.light_12.classList.remove('skill-light');
+            this.$refs.light_13.classList.remove('skill-light');
         }
     },
 };
@@ -256,6 +268,7 @@ export default {
         font-size: 15rem;
         font-weight: bold;       
         color: #454545;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
     p {
@@ -263,6 +276,7 @@ export default {
         font-weight: 600;
         line-height: 0;
         color: #454545;
+        font-family: 'Courier New', Courier, monospace;
     }
 }
 
@@ -289,6 +303,8 @@ export default {
     h1 {
         font-size: larger;
         font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        color: #454545;
     }
 
     hr {
@@ -307,6 +323,15 @@ export default {
     position: relative;
 }
 
+.skill-name {
+    h4 {
+        font-size: 15px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: #454545;
+    }
+}
+
 .skill-img {
     width: 70%;
     height: 70%;
@@ -316,24 +341,78 @@ export default {
     justify-content: center;
     align-items: center;
     position: relative;
-    border: solid 1px lightblue;
+    border: solid 1px;
 
     .skill-img-2 {
         position: absolute;
         border-radius: 50%;
-        width: 70%;
-        height: 70%;
-        background: lightblue;
+        width: 0%;
+        height: 0%;
         transition: 1.5s;
     }
+    
+    .MAUI-2 {
+        width: 60%;
+        height: 60%;
+    }
 
-    .skill-light {       
-        scale: 1.5
+    .skill-light {
+        width: 90%;
+        height: 90%;
     }
 
     img {
         z-index: 1;
     }
+}
+
+.Csharp, .Blazor, .MAUI, .ASP {
+    border-color: #9b009b;
+}
+.Csharp-2, .Blazor-2, .MAUI-2, .ASP-2 {
+    background: violet;
+}
+
+.Java {
+    border-color: dodgerblue;
+}
+.Java-2 {
+    background: #a8ebff;
+}
+
+.JS {
+    border-color: yellow;
+}
+.JS-2 {
+    background: blanchedalmond;
+}
+
+.TS, .CSS, .WPF {
+    border-color: dodgerblue;
+}
+.TS-2, .CSS-2, .WPF-2 {
+    background: lightblue;
+}
+
+.HTML {
+    border-color: orange;
+}
+.HTML-2 {
+    background: orange;
+}
+
+.Angular {
+    border-color: red;
+}
+.Angular-2 {
+    background: #ff000079;
+}
+
+.Vue, .SB, .Node {
+    border-color: green;
+}
+.Vue-2, .SB-2, .Node-2 {
+    background: #2fff97;
 }
 
 .skill-name {

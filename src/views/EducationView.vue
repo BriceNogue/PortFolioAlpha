@@ -1,10 +1,14 @@
 <template>
     <div class="div-container">
         <div class="div-top">
+            <div class="blur blur_0">
+            </div>
+            <div class="blur blur_1">
+            </div>
             <div class="div-1">
                 <div class="div-2">
                     <h1>Formations</h1>
-                    <h2>Vous avez là un aperçu de mon cursus</h2>
+                    <p>Vous avez là un aperçu de mon cursus</p>
                 </div>
             </div>
         </div>
@@ -138,10 +142,30 @@ export default {
         justify-content: center;
         height: 100vh;
         padding: 10rem;
-        background-image: linear-gradient(to bottom, rgb(252, 219, 219, 0.7), #ffffff), url("../assets/educations-imgs/educations.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        //background-image: linear-gradient(rgb(255, 255, 255, 0.7), #ffffff), url("../assets/educations-imgs/educations.svg");
+        //background-repeat: no-repeat;
+        //background-position: center;
         color: #1E293B;
+        overflow: hidden;
+
+        .blur {
+            width: 20rem;
+            height: 20rem;     
+            filter: blur(100px);
+            position: absolute;
+        }
+    
+        .blur_0 {
+            background: dodgerblue;
+            top: 0;
+            left: 0;
+        }
+    
+        .blur_1 {
+            background: pink;
+            bottom: 30%;
+            right: 0;    
+        }
 
         .div-1 {
             padding: 5px;
@@ -154,17 +178,22 @@ export default {
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            flex-direction: column;          
+            background-image: linear-gradient(#9CA3AF 0.9px, transparent 0.9px), linear-gradient(to right, #9CA3AF 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
+            background-size: 18px 18px;
         }
 
         h1 {
             font-size: 7rem;
             font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #454545;
         }
 
-        h2 {
-            font-size: 18px;
-            font-weight: 500;
+        p {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         .educations-img {

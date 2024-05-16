@@ -10,7 +10,7 @@
             </router-link>
           </div>  
           <nav class="nav-links">
-            <router-link class="nav-link" to="/">Home</router-link>
+            <router-link class="nav-link" to="/">About Me</router-link>
             <router-link class="nav-link" to="/education">Education</router-link>
             <router-link class="nav-link" to="/skills">Skills</router-link>
             <router-link class="nav-link" to="/experiences">Experiences</router-link>
@@ -98,6 +98,8 @@ header {
   background: transparent;
   z-index: 1;
   transition: all 300ms ease-in-out;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 
   .logo-N {
     display: none;
@@ -148,20 +150,20 @@ nav {
   display: flex;
   justify-content: center;
   border: solid 1px lightgrey;
-  background: rgb(26, 25, 25, 0.1);
+  background: rgba(26, 25, 25, 0.055);
   padding: 10px;
-  border-radius: 25px;
+  border-radius: 50px;
+  gap: 10px;
   
   .nav-link {
     text-decoration: none;
     font-size: 15px;
     color: #1E293B;
-    font-weight: 500;
     text-indent: 15px;
   }
 
   .nav-link:hover {
-    color: inherit;
+    text-decoration: underline;
   }
 
   .router-link-exact-active {
@@ -176,7 +178,6 @@ nav {
   height: 40px;
   border-radius: 25px;
   font-size: 18px;
-  font-weight: 500;
   transition: 0.3s;
 }
 

@@ -412,7 +412,7 @@ export default {
     border-color: green;
 }
 .Vue-2, .SB-2, .Node-2 {
-    background: #2fff97;
+    background: #2fff97af;
 }
 
 .skill-name {

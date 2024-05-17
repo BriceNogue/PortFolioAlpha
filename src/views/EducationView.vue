@@ -163,7 +163,7 @@ export default {
     
         .blur_1 {
             background: pink;
-            bottom: 30%;
+            bottom: 0;
             right: 0;    
         }
 
@@ -179,7 +179,7 @@ export default {
             align-items: center;
             justify-content: center;
             flex-direction: column;          
-            background-image: linear-gradient(#9ca3af51 0.9px, transparent 0.9px), linear-gradient(to right, #9ca3af51 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
+            //background-image: linear-gradient(#9ca3af51 0.9px, transparent 0.9px), linear-gradient(to right, #9ca3af51 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
             background-size: 18px 18px;
         }
 
@@ -188,12 +188,14 @@ export default {
             font-weight: bold;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #454545;
+            z-index: 1;
         }
 
         p {
             font-size: 15px;
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
+            z-index: 1;
         }
 
         .educations-img {
@@ -277,6 +279,10 @@ export default {
     
             h2 {
                 font-size: 14px;
+            }
+
+            p {
+                font-size: 12px;
             }
         }
 

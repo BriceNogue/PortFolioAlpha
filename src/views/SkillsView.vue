@@ -370,7 +370,7 @@ export default {
     border-color: #9b009b;
 }
 .Csharp-2, .Blazor-2, .MAUI-2, .ASP-2 {
-    background: violet;
+    background: rgba(238, 130, 238, 0.507);
 }
 
 .Java {

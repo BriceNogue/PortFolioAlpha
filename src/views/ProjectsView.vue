@@ -15,31 +15,24 @@
                 <img src="../assets/projects-imgs/projects.svg" alt="">
             </div>
         </div>
-        <div class="projects inline-grid grid-cols-4 gap-9">
+        <div class="projects inline-grid grid-cols-3 gap-9">
             <div class="project hover:scale-110">
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
                 <div>
                     <h1>Plateforme Appli...</h1>
-                    <p>Proj académique</p>
-                    <h2>Encours...</h2>
                 </div>
-                <div>
-                    <a>GitHub</a>
-                </div>
-            </div>
-            <div class="project hover:scale-110">
-                <div>
-                    <img src="../assets/projects-imgs/project.svg" alt="">
-                </div>
-                <div>
-                    <h1>Poject Name</h1>
-                    <p>Projet académique</p>
-                    <h2>Encours...</h2>
-                </div>
-                <div>
-                    <a>GitHub</a>
+                <div class="project-infos">
+                    <div>
+                        <h1>Plateforme Appli...</h1>
+                        <p>Proj académique</p>
+                        <p>2023 / 2024</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="project hover:scale-110">
@@ -48,11 +41,52 @@
                 </div>
                 <div>
                     <h1>Poject Name</h1>
-                    <p>Projet académique</p>
-                    <h2>Encours...</h2>
+                </div>
+                <div class="project-infos">
+                    <div>
+                        <h1>Poject Name</h1>
+                        <p>Projet académique</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
+                </div>               
+            </div>
+            <div class="project hover:scale-110">
+                <div>
+                    <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
                 <div>
-                    <a>GitHub</a>
+                    <h1>Poject Name</h1>
+                </div>
+                <div class="project-infos">
+                    <div>
+                        <h1>Poject Name</h1>
+                        <p>Projet académique</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
+                </div>                   
+            </div>
+            <div class="project hover:scale-110">
+                <div>
+                    <img src="../assets/projects-imgs/project.svg" alt="">
+                </div>
+                <div>
+                    <h1>Poject Name</h1>
+                </div>
+                <div class="project-infos">
+                    <div>
+                        <h1>Poject Name</h1>
+                        <p>Projet académique</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
                 </div>
             </div>
             <div class="project hover:scale-110">
@@ -61,17 +95,8 @@
                 </div>
                 <div>
                     <h1>Poject Name</h1>
-                    <p>Projet académique</p>
-                    <h2>Encours...</h2>
                 </div>
-                <div>
-                    <a>GitHub</a>
-                </div>
-            </div>
-            <div class="project hover:scale-110">
-                <div>
-                    <img src="../assets/projects-imgs/project.svg" alt="">
-                </div>
+                <div class="project-infos">                   
                 <div>
                     <h1>Poject Name</h1>
                     <p>Projet académique</p>
@@ -79,6 +104,7 @@
                 </div>
                 <div>
                     <a>GitHub</a>
+                </div>
                 </div>
             </div>
         </div>
@@ -124,6 +150,11 @@ export default {
                 font-size: 3rem;
                 font-weight: bold;
             }
+
+            p {
+                font-size: 15px;
+                font-family: 'Courier New', Courier, monospace;
+            }
         }
 
         .projects-img {
@@ -156,17 +187,35 @@ export default {
     }
 
     .projects {
-        padding-top: 2rem;
+        padding-top: 4rem;
 
         .project {
-            width: 210px;
-            height: 260px;
+            width: auto;
+            height: auto;
             box-shadow: 1px 1px 10px #93c5fd;
             padding: 20px 10px 20px 10px;
             border-radius: 10px;
             text-align: center;
             background: white;
             transition: 0.3s;
+            position: relative;
+            color: #454545;
+            overflow: hidden;
+
+            .project-infos {
+                width: 100%;
+                height: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                overflow: hidden;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                transition: 0.3s;
+            }
 
             h1 {
                 font-size: 20px;
@@ -181,15 +230,35 @@ export default {
                 margin-bottom: 10px;
             }
 
+            p {
+                font-size: 14px;                
+                font-family: 'Courier New', Courier, monospace;
+            }
+
             a {
                 text-decoration: none;
-                font-size: 18px;
+                font-size: 15px;
                 background: #2563eb;
+                cursor: pointer;
                 color: white;
                 font-weight: 500;
                 padding: 5px 20px 5px 20px;
                 border-radius: 25px;
+                transition: 0.3s;
             }
+
+            a:hover {
+                padding: 5px 30px 5px 30px;
+            }
+        }
+
+        .project:hover .project-infos {
+            background: rgba(26, 25, 25, 0.055);
+            height: 100%;
+            backdrop-filter: blur(15px);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: solid 3px white;
         }
     }
 

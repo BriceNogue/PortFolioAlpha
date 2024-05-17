@@ -10,7 +10,7 @@
             </router-link>
           </div>  
           <nav class="nav-links">
-            <router-link class="nav-link" to="/">About Me</router-link>
+            <router-link class="nav-link" to="/">Home</router-link>
             <router-link class="nav-link" to="/education">Education</router-link>
             <router-link class="nav-link" to="/skills">Skills</router-link>
             <router-link class="nav-link" to="/experiences">Experiences</router-link>
@@ -146,14 +146,13 @@ header.onScroll {
 }
 
 nav {
-  width: 50%;
   display: flex;
   justify-content: center;
   border: solid 1px lightgrey;
   background: rgba(26, 25, 25, 0.055);
-  padding: 10px;
-  border-radius: 50px;
+  padding: 10px 35px 10px 20px;
   gap: 10px;
+  border-radius: 50px;
   
   .nav-link {
     text-decoration: none;

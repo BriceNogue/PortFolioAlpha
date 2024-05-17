@@ -265,7 +265,7 @@ export default {
     }
 
     h1 {
-        font-size: 15rem;
+        font-size: 10rem;
         font-weight: bold;       
         color: #454545;
         font-family:Verdana, Geneva, Tahoma, sans-serif;

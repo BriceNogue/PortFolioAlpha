@@ -1,6 +1,12 @@
 <template>
     <div class="div-container">
         <div class="div-top">
+            <div class="blur blur_0">
+            </div>
+            <div class="blur blur_1">
+            </div>
+            <div class="blur blur_2">
+            </div>
             <div class="projects-title">
                 <h1>Mes projets <br> La plupart de ces projets ont été réalisé en équipe</h1>
                 <p>Du plus récent au plus ancien</p>
@@ -104,7 +110,7 @@ export default {
         width: 100%;
         min-height: 100vh;
         padding: 10rem;
-        background: linear-gradient(180deg, white,#fcdbdb, white);
+        //background: linear-gradient(180deg, white,#fcdbdb, white);
     }
 
     .div-top {
@@ -122,6 +128,30 @@ export default {
 
         .projects-img {
             width: 40%;
+        }
+
+        .blur {
+            width: 20rem;
+            height: 20rem;     
+            filter: blur(100px);
+            position: fixed;
+            z-index: -1;
+        }
+    
+        .blur_0 {
+            background: dodgerblue;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    
+        
+    
+        .blur_2 {
+            background: pink;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
         }
     }
 

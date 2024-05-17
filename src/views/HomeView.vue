@@ -104,14 +104,14 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  padding: 0 10rem 0 0;
+  padding: 5rem 10rem 0 0;
 
   .my-name {
     line-height: 0;
 
     h1 {
       font-size: 5rem;
-      letter-spacing: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     h2 {
@@ -133,6 +133,7 @@ export default {
   }
 
   .about-p {
+    font-size: 15px;
     letter-spacing: 0.1px;
   }
 

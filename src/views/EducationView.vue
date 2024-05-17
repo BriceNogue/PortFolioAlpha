@@ -169,17 +169,17 @@ export default {
 
         .div-1 {
             padding: 5px;
-            border: 1px solid #9CA3AF;
+            border: 1px solid #9ca3af51;
         }
 
         .div-2 {
             padding: 5rem 10rem 5rem 10rem;
-            border: 1px solid #9CA3AF;
+            border: 1px solid #9ca3af51;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;          
-            background-image: linear-gradient(#9CA3AF 0.9px, transparent 0.9px), linear-gradient(to right, #9CA3AF 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
+            background-image: linear-gradient(#9ca3af51 0.9px, transparent 0.9px), linear-gradient(to right, #9ca3af51 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
             background-size: 18px 18px;
         }
 

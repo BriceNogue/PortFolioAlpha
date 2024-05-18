@@ -11,14 +11,26 @@
             </div>
         </div>
         <div class="div-experiences">
-            <dir class="experiences grid grid-cols-2 gap-5 ">
+            <dir class="experiences grid grid-cols-2 gap-9">
                 <div class="experience">
                     <div class="experience-title">
-                        <h3>2022 / 2023</h3>
-                        <span>+</span>
+                        <h3><b>Développeur Web</b></h3>
+                        <p>Avril 2023 à juillet 2023</p>
+                        <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nihil enim officia perspiciatis quae nemo eveniet, quis illum quaerat officiis totam perferendis quos sint distinctio eos optio omnis adipisci eum.</p>
+                        <p>
+                            <b>DevPea</b><br>
+                            📍Douala, Cameroun<br><br>
+                            L'objectif de ce stage était de réaliser une plateforme pour l'apprentissage en ligne du
+                            code de la route. <br>
+                            J'étais dans une équipe de 4 développeurs mon rôle était: <br>
+                            🔵 Participer a l'analyse du projet, <br>
+                            🔵 Créer des maquettes UI, <br>
+                            🔵 Intégrer ces maquettes avec Angular, <br>
+                            🔵 Gérer le responsive des interfaces utilisateur. <br>
+
+                        </p>
                     </div>
                 </div>
                 <div class="experience">
@@ -124,29 +136,28 @@ export default {
 }
 
 .div-experiences {
-    height: 100vh;
+    min-height: 60vh;
+    max-height: 100vh;   
+    padding: 0 10rem 0 10rem;
 }
 
 .experiences {
-    padding: 0 10rem 0 10rem;
-    position: relative;
-}
-
-.experiences-img {
-    height: 100vh;
-    img {
-        width: 50%;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
 }
 
 .experience {
+    z-index: 1;
 
     .experience-title {
         width: 100%;
         display: inline-flex;
         justify-content: space-between;
         padding: 10px;
-        background: lightgray;
+        background: rgba(26, 25, 25, 0.055);
+        backdrop-filter: blur(14px);
         border-radius: 10px 5px 10px 5px;
     }
 
@@ -154,16 +165,22 @@ export default {
         width: 100%;
         height: 0;
         overflow: hidden;
-        border-radius: 0 0 10px 5px;
         transition: 0.3s;
+        position: relative;
     }
 }
 
 .experience:hover .experience-details {
     height: auto;   
     backdrop-filter: blur(14px);
-    padding: 10px;
-    border: solid 1px lightgray;
+    padding: 10px;    
+    border-radius: 0 0 10px 5px;
+    background: rgba(26, 25, 25, 0.055);
+}
+
+.experience:hover .experience-title {
+     
+    border-radius: 10px 5px 0 0;
 }
 
 </style>

@@ -23,7 +23,7 @@
                             <b>DevPea</b><br>
                             📍Douala, Cameroun<br><br>
                             L'objectif de ce stage était de réaliser une plateforme pour l'apprentissage en ligne du
-                            code de la route. <br>
+                            code de la route. <br><br>
                             J'étais dans une équipe de 4 développeurs mon rôle était: <br>
                             🔵 Participer a l'analyse du projet, <br>
                             🔵 Créer des maquettes UI, <br>
@@ -97,7 +97,7 @@ export default {
         width: 20rem;
         height: 20rem;     
         filter: blur(100px);
-        position: fixed;  
+        position: absolute;  
     }
 
     .blur_0 {

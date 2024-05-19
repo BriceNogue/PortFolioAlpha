@@ -422,6 +422,44 @@ export default {
     font-size: 1.5rem;
 }
 
+@media (max-width: 1024px) {
+    .div-top {
+    
+        .blur {
+            width: 15rem;
+            height: 15rem;     
+            filter: blur(80px);           
+        }
+    
+        .blur_1 {
+            top: 40%;
+            left: 40%;
+        }
+    
+        h1 {
+            font-size: 7rem;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .skills-list {
+        padding:  0 5rem 5rem 5rem;
+    }
+    
+    .skills {
+        gap: 1rem;
+    }
+
+    .skill {
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 10px;
+    }
+}
+
 @media (max-width: 768px) {
     .div-top {
     
@@ -432,7 +470,6 @@ export default {
         }
     
         .blur_1 {
-            top: 40%;
             left: 30%;
         }
     
@@ -448,15 +485,30 @@ export default {
     .skills-list {
         padding:  0 2rem 2rem 2rem;
     }
+
+}
+
+@media (max-width: 320px) {
+    .div-top {
     
-    .skills {
-        gap: 1rem;
+        .blur {
+            width: 7rem;
+            height: 7rem;     
+            filter: blur(40px);           
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .skills-list {
+        padding:  0 1rem 1rem 1rem;
     }
 
     .skill {
-        width: 9rem;
-        height: 9rem;
-        margin-bottom: 10px;
+        width: 8rem;
+        height: 8rem;
     }
 }
 

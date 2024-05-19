@@ -1,7 +1,7 @@
 <template>
     <div class="div-container">
         <div class="div-top">
-            <h1>Experiences</h1>
+            <h1>Expériences</h1>
             <p>Are you interested in my experience ? 🙂</p>
             <div class="blur blur_0">
             </div>
@@ -11,11 +11,12 @@
             </div>
         </div>
         <div class="div-experiences">
+            <hr>
             <dir class="experiences grid grid-cols-1 gap-5">
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Fullstack</b></h3>
-                        <p>Avril 2023 / Juillet 2023</p>
+                        <p>Avril 2023 -- Juillet 2023</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -43,7 +44,7 @@
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Web</b></h3>
-                        <p>Juin 2022 / Août 2022</p>
+                        <p>Juin 2022 -- Août 2022</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -74,7 +75,7 @@
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Fullstack</b></h3>
-                        <p>Juin 2021 / Août 2021</p>
+                        <p>Juin 2021 -- Août 2021</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -91,7 +92,9 @@
                             Durant ce stage j'avais pour objectif de réaliser une application de gestion de stock. <br><br>
 
                             Missions: <br>
+                            🔵 Rédaction du cahier de charges, <br>
                             🔵 Analyse de projet, <br>
+                            🔵 Planification, <br>
                             🔵 UI design, <br>
                             🔵 Développement frontend, <br>
                             🔵 Développement backend. <br>
@@ -99,6 +102,7 @@
                     </div>
                 </div>
             </dir>
+            <hr>
         </div>
     </div>
 </template>
@@ -144,7 +148,7 @@ export default {
         width: 20rem;
         height: 20rem;     
         filter: blur(100px);
-        position: absolute;  
+        position: fixed;  
     }
 
     .blur_0 {
@@ -154,6 +158,7 @@ export default {
     }
 
     .blur_1 {
+        position: absolute; 
         background: blue;
         top: 30%;
         left: 40%;
@@ -167,14 +172,13 @@ export default {
     }
 
     h1 {
-        font-size: 7rem;
-        font-weight: bold;     
-        color: #454545;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10rem;
+        font-weight: bold;   
+        font-family: 'Roboto';
     }
 
     p {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 0;
         color: #454545;
@@ -183,7 +187,7 @@ export default {
 }
 
 .div-experiences {
-    min-height: 60vh;
+    min-height: 80vh;
     max-height: 100vh;   
     padding: 0 10rem 0 10rem;
 }

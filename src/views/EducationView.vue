@@ -8,7 +8,7 @@
             <div class="div-1">
                 <div class="div-2">
                     <h1>Formations</h1>
-                    <p>Vous avez là un aperçu de mon cursus</p>
+                    <p>Here you have an overview of my educational background.👨‍🎓</p>
                 </div>
             </div>
         </div>
@@ -184,18 +184,17 @@ export default {
         }
 
         h1 {
-            font-size: 7rem;
+            font-size: 10rem;
             font-weight: bold;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: #454545;
-            z-index: 1;
+            font-family: 'Roboto';
+            line-height: 12rem;
         }
 
         p {
             font-size: 15px;
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
-            z-index: 1;
+            line-height: 0;
         }
 
         .educations-img {

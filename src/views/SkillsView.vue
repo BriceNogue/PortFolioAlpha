@@ -1,7 +1,7 @@
 <template>
     <div class="div-container">
         <div class="div-top">
-            <h1>Skills</h1>
+            <h1>Compétences</h1>
             <p>What about my skills ?</p>
             <div class="blur blur_0">
             </div>
@@ -12,7 +12,7 @@
         </div>
         <div class="skills-list" id="skills-list">
             <div class="skills-title">
-                <h1>Languages</h1>
+                <h1>Langages</h1>
                 <hr>
             </div>
             <div class="skills languages">
@@ -266,14 +266,13 @@ export default {
 
     h1 {
         font-size: 10rem;
-        font-weight: bold;       
-        color: #454545;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold; 
+        font-family: 'Roboto';
     }
 
     p {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 15px;
+        font-weight: bold;
         line-height: 0;
         color: #454545;
         font-family: 'Courier New', Courier, monospace;

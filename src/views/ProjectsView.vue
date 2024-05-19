@@ -8,8 +8,8 @@
             <div class="blur blur_2">
             </div>
             <div class="projects-title">
-                <h1>Mes projets <br> La plupart de ces projets ont été réalisé en équipe</h1>
-                <p>Du plus récent au plus ancien</p>
+                <h1>Projets</h1>
+                <p>Du plus récent au plus ancien.</p>
             </div>
             <div class="projects-img">
                 <img src="../assets/projects-imgs/projects.svg" alt="">
@@ -135,25 +135,30 @@ export default {
     .div-container {
         width: 100%;
         min-height: 100vh;
-        padding: 10rem;
+        padding: 0 10rem 10rem 10rem;
         //background: linear-gradient(180deg, white,#fcdbdb, white);
     }
 
     .div-top {
         width: 100%;
+        height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         .projects-title {
             h1 {
-                font-size: 3rem;
+                font-size: 10rem;
                 font-weight: bold;
+                font-family: 'Roboto';
             }
 
             p {
                 font-size: 15px;
                 font-family: 'Courier New', Courier, monospace;
+                margin-left: 10px;
+                font-weight: bold;
+                line-height: 0;
             }
         }
 

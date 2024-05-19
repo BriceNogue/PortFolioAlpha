@@ -11,11 +11,11 @@
             </div>
         </div>
         <div class="div-experiences">
-            <dir class="experiences grid grid-cols-2 gap-5">
+            <dir class="experiences grid grid-cols-1 gap-5">
                 <div class="experience">
                     <div class="experience-title">
-                        <h3><b>Développeur Web</b></h3>
-                        <p>Avril 2023 à juillet 2023</p>
+                        <h3><b>Stage Développeur Fullstack</b></h3>
+                        <p>Avril 2023 / Juillet 2023</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -39,22 +39,63 @@
                         </p>
                     </div>
                 </div>
+
                 <div class="experience">
                     <div class="experience-title">
-                        <h3>2022 / 2023</h3>
-                        <span>+</span>
+                        <h3><b>Stage Développeur Web</b></h3>
+                        <p>Juin 2022 / Août 2022</p>
+                        <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nihil enim officia perspiciatis quae nemo eveniet, quis illum quaerat officiis totam perferendis quos sint distinctio eos optio omnis adipisci eum.</p>
+                        <div class="entrprise">
+                            <p>
+                                <b>Limitless-Tech</b>
+                            </p>
+                            <div class="entreprise-logo">
+                                <img src="../assets/logo.svg" alt="Limitless-Tech">
+                            </div>
+                        </div>
+                        <p>                           
+                            📍Yaoundé, Cameroun<br><br>
+                            Il m'a été demande de concevoir et implémenter un backoffice pour la gestion d'une 
+                            plateforme de payement en ligne. <br><br>
+
+                            Missions: <br>
+                            🔵 Analyse de projet, <br>
+                            🔵 Planification, <br>
+                            🔵 UI design, <br>
+                            🔵 Développement frontend, <br>
+                            🔵 Développement backend, <br>
+                            🔵 Tests.<br>
+                        </p>
                     </div>
                 </div>
+
                 <div class="experience">
                     <div class="experience-title">
-                        <h3>2022 / 2023</h3>
-                        <span>+</span>
+                        <h3><b>Stage Développeur Fullstack</b></h3>
+                        <p>Juin 2021 / Août 2021</p>
+                        <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates nihil enim officia perspiciatis quae nemo eveniet, quis illum quaerat officiis totam perferendis quos sint distinctio eos optio omnis adipisci eum.</p>
+                        <div class="entrprise">
+                            <p>
+                                <b>Limitless-Tech</b>
+                            </p>
+                            <div class="entreprise-logo">
+                                <img src="../assets/logo.svg" alt="Limitless-Tech">
+                            </div>
+                        </div>
+                        <p>                           
+                            📍Yaoundé, Cameroun<br><br>
+                            Durant ce stage j'avais pour objectif de réaliser une application de gestion de stock. <br><br>
+
+                            Missions: <br>
+                            🔵 Analyse de projet, <br>
+                            🔵 UI design, <br>
+                            🔵 Développement frontend, <br>
+                            🔵 Développement backend. <br>
+                        </p>
                     </div>
                 </div>
             </dir>
@@ -148,6 +189,7 @@ export default {
 }
 
 .experiences {
+    padding: 5px;
 }
 
 .experience {
@@ -161,6 +203,15 @@ export default {
         background: rgba(26, 25, 25, 0.055);
         backdrop-filter: blur(14px);
         border-radius: 10px 5px 10px 5px;
+        
+        h3 {
+            width: 50%;
+        }
+
+        p {
+            font-size: 13px;
+            font-family: 'Roboto';
+        }
     }
 
     .experience-details {
@@ -174,11 +225,16 @@ export default {
             width: 100%;
             display: inline-flex;
             justify-content: space-between;
+            align-items: center;
 
             .entreprise-logo {
                 width: 40px;
                 height: 40px;
             }
+        }
+
+        p {
+            font-family: 'Roboto';
         }
     }
 }

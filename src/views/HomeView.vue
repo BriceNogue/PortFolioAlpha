@@ -196,25 +196,19 @@ export default {
 
 /************************** Responsive **************************/
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .home {
-    .home {
-      display: grid;
-      grid-template-columns: 100%;
-    }
+    grid-template-columns: 100%;
   }
 
   .div-img-and-years {
-    width: 100%;
-    height: auto;
     
     .div-img {
-      width: 100%;
-      height: 52vh;
+      height: 50vh;
 
       img {
         position: absolute;
-        top: -3rem;
+        top: -4rem;
         left: -8rem;
       }
   
@@ -224,7 +218,7 @@ export default {
         top: 55%;
         left: 57%;
 
-        h1, h3 {
+        p {
           font-size: 13px;
         }
       }
@@ -232,45 +226,155 @@ export default {
   }
 
   .div-info {
-    width: 100%;
-    height: auto;
     justify-content: inherit;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 1rem;
   
     .my-name {
       line-height: 0;
   
       h1 {
-        font-size: 3rem;
-        letter-spacing: 5px;
+        font-size: 3.5rem;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        font-size: 12px;
       }
   
       .brice {
-        margin: 40px 0 40px 0;
-        
+        margin: 25px 0 30px 0;       
       }
   
       .nogue {
-        margin: 0 0 40px 0;
+        margin: 0 0 30px 0;
       }
   
       .alpha {
-        margin: 40px 0 40px 0;
+        margin: 30px 0 25px 0;
       }
     }
   
     .about-p {
-      letter-spacing: 0.3px;
-      font-size: 15px;
+      letter-spacing: 0;
+      font-size: 12px;
     }
   
     .div-btn {
       justify-content: center;
   
       .btn-HireMe {
-        width: 200px;
+        width: 100%;
         margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) { 
+  .div-img-and-years {
+    
+    .div-img {
+
+      img {
+        position: absolute;
+        top: -3rem;
+        left: -7.6rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) { 
+  .div-img-and-years {
+
+    .div-img {
+      
+      img {
+        position: absolute;
+        top: -3rem;
+        left: -7rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .home {
+    grid-template-columns: 100%;
+  }
+
+  .div-img-and-years {
+
+    .div-img {
+      height: 50vh;
+
+      img {
+        position: absolute;
+        top: -6rem;
+        left: -8rem;
+      }
+  
+      .experience-years {
+        display: inherit;
+        width: 120px;
+        top: 50%;
+        left: 50%;
+
+        p {
+          padding: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .div-info {
+    justify-content: inherit;
+    align-items: flex-start;
+    padding: 0.5rem;
+  
+    .my-name {
+      line-height: 0;
+  
+      h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 10px;
+      }
+  
+      .brice {
+        margin: 12px 0 15px 0;
+        letter-spacing: 5px;      
+      }
+  
+      .nogue {
+        margin: 0 0 15px 0;
+        letter-spacing: 5px;
+      }
+  
+      .alpha {
+        margin: 15px 0 12px 0;
+      }
+    }
+  
+    .about-p {
+      letter-spacing: 0;
+      font-size: 12px;
+    }
+  
+    .div-btn {
+      justify-content: center;
+  
+      .btn-HireMe {
+        width: 100%;
+        height: 35px;
+        font-weight: 500;
+        margin-top: 15px;
       }
     }
   }

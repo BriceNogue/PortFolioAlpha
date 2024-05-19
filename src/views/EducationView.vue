@@ -253,7 +253,86 @@ export default {
 
     /********************** Responsive *************************/
 
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (max-width: 768px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .div-top {
+            padding: 1rem;
+            background-size: contain;
+    
+            .blur {
+                width: 10rem;
+                height: 10rem;     
+                filter: blur(50px);
+            }
+
+            .div-1 {
+                padding: 3px;
+            }
+    
+            .div-2 {
+                padding: 1rem;
+            }
+    
+            h1 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+    
+            h2 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 8px;
+            }
+        }
+
+        .formation {
+            width: 90%;
+            height: auto;
+            padding: 1rem;
+            display: block;
+            border: grey solid 1px;
+            margin: 0 0 3rem 0;
+    
+            div {
+                width: 100%;
+                align-items: center;
+    
+                h1 {
+                    font-size: 1.5rem;
+                }
+    
+                h2 {
+                    font-size: 20px;
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+    
+            .acquis {
+                width: 100%;
+    
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .bachelor {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 1024px) {
         .div-container {
             display: flex;
             flex-direction: column;
@@ -273,15 +352,15 @@ export default {
             }
     
             h1 {
-                font-size: 3rem;
+                font-size: 7rem;
             }
     
             h2 {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             p {
-                font-size: 12px;
+                font-size: 15px;
             }
         }
 

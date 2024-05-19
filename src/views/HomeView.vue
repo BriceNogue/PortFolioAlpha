@@ -5,17 +5,17 @@
         <img src="@/assets/profil.png" alt="">
 
         <div class="experience-years">
-          <h1>+02 </h1>
-          <h3>Années d'expérience</h3>
+          <p>+02 <br> Années d'expérience</p>
         </div>
       </div>
     </div>
+
     <div class="div-info">
       <div class="my-name">
         <h2 class="h-my-name">Je suis</h2>
         <h1 class="brice">Brice</h1>
         <h1 class="nogue"><b>NOGUE</b></h1>
-        <h2>Souvent appelé</h2>
+        <h2>✌️Encore appelé</h2>
         <h1 class="alpha"><b>ALPHA</b></h1>
       </div>
       <div>
@@ -24,7 +24,8 @@
       <div class="div-btn">
         <button class="btn-HireMe">Mon CV</button>
       </div>
-      <!--<div class="div-skils">
+
+      <!-- <div class="div-skils">
         <div class="javascript">
           <span>JavaScript</span>
         </div>
@@ -63,12 +64,11 @@ export default {
 .home {
   width: 100%;
   height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
 .div-img-and-years {
-  width: 50%;
-  height: 100vh;
   position: relative;
 
   .div-img {
@@ -83,23 +83,20 @@ export default {
       position: absolute;
       top: 65%;
       left: 90%;
-      width: 160px;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background: rgb(26, 25, 25, 0.5);
-      color: white;
-      border-radius: 10px;
-      padding: 5px 5px 5px 5px;
+      width: 10.5rem;
+      
+      p {
+        background: rgb(26, 25, 25, 0.5);
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+      }
     }
   }
 }
 
 
 .div-info {
-  width: 50%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,31 +107,37 @@ export default {
     line-height: 0;
 
     h1 {
-      font-size: 5rem;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 6rem;
+      font-family: 'Roboto';
+      line-height: 1rem;
     }
 
     h2 {
+      font-family: 'Roboto';
+      font-size: 15px;
       margin: 0 0 0 5px;
     }
 
     .brice {
       margin: 40px 0 65px 0;
-      
+      letter-spacing: 10px;
     }
 
     .nogue {
       margin: 0 0 60px 0;
+      letter-spacing: 10px;
     }
 
     .alpha {
-      margin: 40px 0 60px 0;
+      margin: 40px 0 50px 0;
+      font-family: 'Verdana, Geneva, Tahoma, sans-serif';
     }
   }
 
   .about-p {
+    font-family: 'Roboto';
     font-size: 15px;
-    letter-spacing: 0.1px;
+    letter-spacing: 1.1px;
   }
 
   .div-btn {
@@ -147,7 +150,9 @@ export default {
       height: 40px;
       background: #2563eb;
       border-radius: 25px;
-      font-size: 18px;
+      font-size: 15px;
+      font-family: 'Roboto';
+      font-weight: bold;
       color: white;
       margin-top: 60px;
     }
@@ -193,8 +198,10 @@ export default {
 
 @media (min-width: 320px) and (max-width: 768px) {
   .home {
-    height: auto;
-    flex-direction: column;
+    .home {
+      display: grid;
+      grid-template-columns: 100%;
+    }
   }
 
   .div-img-and-years {

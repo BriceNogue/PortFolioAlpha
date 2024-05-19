@@ -342,4 +342,11 @@ header.onScroll {
   }
 }
 
+@media (max-width: 1194px) {
+  .nav-bar {
+    padding: 0 5rem 0 5rem;
+  }
+}
+
+
 </style>

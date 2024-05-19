@@ -269,19 +269,70 @@ export default {
 
     /****************************** Responsive *********************************/
 
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (max-width: 1024px) {
+        .div-container {
+            padding: 10rem 5rem 5rem 5rem;
+        }
+
+        .div-top {
+            display: inherit;
+
+            .blur {
+                width: 15rem;
+                height: 15rem;     
+                filter: blur(80px);
+            }
+    
+            .projects-title {
+                width: 100%;
+                text-align: center;
+            }
+    
+            .projects-img {
+                width: 100%;
+                padding: 10rem 5rem 10rem 5rem;
+            }
+        }
+
+        .projects {
+            padding: 0rem 0 5rem 0;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 2rem;
+    
+            .project {
+    
+                h1 {
+                    font-size: 18px;
+                }
+    
+                h2 {
+                    font-size: 15px;
+                }
+    
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
         .div-container {
             padding: 5rem 2rem 2rem 2rem;
         }
 
         .div-top {
-            display: inherit;
+            .blur {
+                width: 10rem;
+                height: 10rem;     
+                filter: blur(50px);
+            }
     
             .projects-title {
                 width: 100%;
                 text-align: center;
                 h1 {
-                    font-size: 2rem;
+                    font-size: 6rem;
                 }
             }
     
@@ -292,42 +343,36 @@ export default {
         }
 
         .projects {
-            padding: 2rem 0 5rem 0;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(1, minmax(0, 1fr));
             gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .div-top {
+
+            .blur {
+                width: 7rem;
+                height: 7rem;     
+                filter: blur(40px);
+            }
     
-            .project {
+            .projects-title {
                 width: 100%;
-                height: 260px;
-                box-shadow: 1px 1px 10px #93c5fd;
-                padding: 20px 10px 20px 10px;
-                border-radius: 10px;
                 text-align: center;
-                background: white;
-                transition: 0.3s;
-    
+
                 h1 {
-                    font-size: 20px;
-                    font-weight: bold;
-                    margin-top: 10px;
+                    font-size: 4rem;
                 }
+
+                p {
+                    font-size: 11px;
+                }
+            }
     
-                h2 {
-                    font-size: 18px;
-                    font-weight: 500;
-                    color: green;
-                    margin-bottom: 10px;
-                }
-    
-                a {
-                    text-decoration: none;
-                    font-size: 18px;
-                    background: #2563eb;
-                    color: white;
-                    font-weight: 500;
-                    padding: 5px 20px 5px 20px;
-                    border-radius: 25px;
-                }
+            .projects-img {
+                width: 100%;
+                padding: 3rem 0 0 0;
             }
         }
     }

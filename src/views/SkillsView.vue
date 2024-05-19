@@ -422,4 +422,42 @@ export default {
     font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+    .div-top {
+    
+        .blur {
+            width: 10rem;
+            height: 10rem;     
+            filter: blur(50px);           
+        }
+    
+        .blur_1 {
+            top: 40%;
+            left: 30%;
+        }
+    
+        h1 {
+            font-size: 3.5rem;
+        }
+    
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .skills-list {
+        padding:  0 2rem 2rem 2rem;
+    }
+    
+    .skills {
+        gap: 1rem;
+    }
+
+    .skill {
+        width: 9rem;
+        height: 9rem;
+        margin-bottom: 10px;
+    }
+}
+
 </style>

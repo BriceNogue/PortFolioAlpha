@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="div-experiences">
-            <dir class="experiences grid grid-cols-2 gap-9">
+            <dir class="experiences grid grid-cols-2 gap-5">
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Développeur Web</b></h3>
@@ -19,17 +19,23 @@
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
-                        <p>
-                            <b>DevPea</b><br>
+                        <div class="entrprise">
+                            <p>
+                                <b>DevPea</b>
+                            </p>
+                            <div class="entreprise-logo">
+                                <img src="../assets/logo.svg" alt="DevPea">
+                            </div>
+                        </div>
+                        <p>                           
                             📍Douala, Cameroun<br><br>
                             L'objectif de ce stage était de réaliser une plateforme pour l'apprentissage en ligne du
                             code de la route. <br><br>
-                            J'étais dans une équipe de 4 développeurs mon rôle était: <br>
-                            🔵 Participer a l'analyse du projet, <br>
-                            🔵 Créer des maquettes UI, <br>
-                            🔵 Intégrer ces maquettes avec Angular, <br>
-                            🔵 Gérer le responsive des interfaces utilisateur. <br>
-
+                            Dans une équipe de 4 développeurs mes missions étaient: <br>
+                            🔵 Analyse de projet, <br>
+                            🔵 UI design, <br>
+                            🔵 Développement frontend, <br>
+                            🔵 Développement backend. <br>
                         </p>
                     </div>
                 </div>
@@ -142,10 +148,6 @@ export default {
 }
 
 .experiences {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 10px;
 }
 
 .experience {
@@ -167,6 +169,17 @@ export default {
         overflow: hidden;
         transition: 0.3s;
         position: relative;
+
+        .entrprise {
+            width: 100%;
+            display: inline-flex;
+            justify-content: space-between;
+
+            .entreprise-logo {
+                width: 40px;
+                height: 40px;
+            }
+        }
     }
 }
 

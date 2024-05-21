@@ -128,7 +128,7 @@ export default {
 
     .alpha {
       margin: 40px 0 50px 0;
-      font-family: 'Verdana, Geneva, Tahoma, sans-serif';
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
   }
 
@@ -148,7 +148,6 @@ export default {
       background: #2563eb;
       border-radius: 25px;
       font-size: 15px;
-      font-family: 'Roboto';
       font-weight: bold;
       color: white;
       margin-top: 60px;

@@ -102,7 +102,6 @@ header {
   background: transparent;
   z-index: 1;
   transition: all 300ms ease-in-out;
-  font-family: Roboto;
   font-weight: bold;
 
   .logo-N {
@@ -246,7 +245,6 @@ header.onScroll {
 .side-nav {
   height: 0;
   background: white;
-  font-family: Roboto;
   z-index: 100;
   transition: 0.5s;
 

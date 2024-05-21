@@ -108,12 +108,12 @@ export default {
 
     h1 {
       font-size: 6rem;
-      font-family: 'Roboto';
+      font-family: Roboto;
       line-height: 1rem;
     }
 
     h2 {
-      font-family: 'Roboto';
+      font-family: Roboto;
       font-size: 15px;
       margin: 0 0 0 5px;
     }
@@ -135,7 +135,7 @@ export default {
   }
 
   .about-p {
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-size: 15px;
     letter-spacing: 1.1px;
   }

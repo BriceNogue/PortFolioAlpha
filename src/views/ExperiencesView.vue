@@ -12,7 +12,7 @@
         </div>
         <div class="div-experiences">
             <hr>
-            <dir class="experiences grid grid-cols-1 gap-5">
+            <div class="experiences grid grid-cols-1 gap-5">
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Fullstack</b></h3>
@@ -101,7 +101,7 @@
                         </p>
                     </div>
                 </div>
-            </dir>
+            </div>
             <hr>
         </div>
     </div>
@@ -174,7 +174,7 @@ export default {
     h1 {
         font-size: 10rem;
         font-weight: bold;   
-        font-family: 'Roboto';
+        font-family: Roboto;
     }
 
     p {
@@ -214,7 +214,7 @@ export default {
 
         p {
             font-size: 13px;
-            font-family: 'Roboto';
+            font-family: Roboto;
         }
     }
 
@@ -238,7 +238,7 @@ export default {
         }
 
         p {
-            font-family: 'Roboto';
+            font-family: Roboto;
         }
     }
 }

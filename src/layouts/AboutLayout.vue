@@ -8,17 +8,21 @@
                 <slot />
             </main>
         </div>
-        <div>
-            <h3>Footer</h3>
+        <div class="footer">
+            <FooterComponent/>
         </div>
     </div>
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
+import FooterComponent from '@/components/FooterComponent.vue';
 export default {
     name: 'AboutLayout',
-    components: { HeaderComponent },
+    components: { 
+        HeaderComponent,
+        FooterComponent
+     },
 
     data() {
         return {

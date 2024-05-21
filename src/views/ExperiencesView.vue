@@ -16,7 +16,7 @@
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Fullstack</b></h3>
-                        <p>Avril 2023 -- Juillet 2023</p>
+                        <p>Avril 2023 / Juillet 2023</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -44,7 +44,7 @@
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Web</b></h3>
-                        <p>Juin 2022 -- Août 2022</p>
+                        <p>Juin 2022 / Août 2022</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -75,7 +75,7 @@
                 <div class="experience">
                     <div class="experience-title">
                         <h3><b>Stage Développeur Fullstack</b></h3>
-                        <p>Juin 2021 -- Août 2021</p>
+                        <p>Juin 2021 / Août 2021</p>
                         <span><b>+</b></span>
                     </div>
                     <div class="experience-details">
@@ -143,6 +143,7 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 0;
+    color: #1E293B;
 
     .blur {
         width: 20rem;
@@ -202,7 +203,8 @@ export default {
         width: 100%;
         display: inline-flex;
         justify-content: space-between;
-        padding: 10px;
+        align-items: center;
+        padding: 15px 10px;
         background: rgba(26, 25, 25, 0.055);
         backdrop-filter: blur(14px);
         border-radius: 10px 5px 10px 5px;
@@ -251,6 +253,73 @@ export default {
 .experience:hover .experience-title {
      
     border-radius: 10px 5px 0 0;
+}
+
+@media (max-width: 768px) {
+    .div-top {
+    
+        .blur {
+            width: 10rem;
+            height: 10rem;     
+            filter: blur(50px);
+        }
+    
+        .blur_1 {
+            top: 40%;
+            left: 30%;
+            z-index: -1;
+        }
+    
+        h1 {
+            font-size: 3.5rem; 
+        }
+    
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .div-experiences {  
+        padding: 0 1rem 0 1rem;
+    }
+    
+    .experiences {
+        padding: 10px 0;
+    }
+
+    .experience {
+        .experience-title {
+            padding: 15px 5px;
+
+            h3 {
+                font-size: 13px;
+            }
+    
+            p {
+                font-size: 11px;
+            }
+        }
+    
+        .experience-details {
+            width: 100%;
+            height: 0;
+            overflow: hidden;
+            transition: 0.3s;
+            position: relative;
+    
+            .entrprise {
+                width: 100%;
+                display: inline-flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .entreprise-logo {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
 }
 
 </style>

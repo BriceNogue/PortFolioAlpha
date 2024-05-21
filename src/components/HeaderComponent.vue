@@ -174,7 +174,6 @@ header.onScroll {
   .nav-link {
     text-decoration: none;
     font-size: 15px;
-    color: #1E293B;
     text-indent: 15px;
     transition: 0.5s;
   }

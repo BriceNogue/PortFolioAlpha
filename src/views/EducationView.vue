@@ -1,10 +1,14 @@
 <template>
     <div class="div-container">
         <div class="div-top">
+            <div class="blur blur_0">
+            </div>
+            <div class="blur blur_1">
+            </div>
             <div class="div-1">
                 <div class="div-2">
                     <h1>Formations</h1>
-                    <h2>Vous avez là un aperçu de mon cursus</h2>
+                    <p>Here you have an overview of my educational background.👨‍🎓</p>
                 </div>
             </div>
         </div>
@@ -138,33 +142,58 @@ export default {
         justify-content: center;
         height: 100vh;
         padding: 10rem;
-        background-image: linear-gradient(to bottom, rgb(252, 219, 219, 0.7), #ffffff), url("../assets/educations-imgs/educations.svg");
-        background-repeat: no-repeat;
-        background-position: center;
+        //background-image: linear-gradient(rgb(255, 255, 255, 0.7), #ffffff), url("../assets/educations-imgs/educations.svg");
+        //background-repeat: no-repeat;
+        //background-position: center;
         color: #1E293B;
+        overflow: hidden;
+
+        .blur {
+            width: 20rem;
+            height: 20rem;     
+            filter: blur(100px);
+            position: absolute;
+        }
+    
+        .blur_0 {
+            background: dodgerblue;
+            top: 0;
+            left: 0;
+        }
+    
+        .blur_1 {
+            background: pink;
+            bottom: 0;
+            right: 0;    
+        }
 
         .div-1 {
             padding: 5px;
-            border: 1px solid #9CA3AF;
+            border: 1px solid #9ca3af51;
         }
 
         .div-2 {
             padding: 5rem 10rem 5rem 10rem;
-            border: 1px solid #9CA3AF;
+            border: 1px solid #9ca3af51;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            flex-direction: column;          
+            //background-image: linear-gradient(#9ca3af51 0.9px, transparent 0.9px), linear-gradient(to right, #9ca3af51 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
+            background-size: 18px 18px;
         }
 
         h1 {
-            font-size: 7rem;
+            font-size: 10rem;
             font-weight: bold;
+            line-height: 12rem;
         }
 
-        h2 {
-            font-size: 18px;
-            font-weight: 500;
+        p {
+            font-size: 15px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 0;
         }
 
         .educations-img {
@@ -223,7 +252,86 @@ export default {
 
     /********************** Responsive *************************/
 
-    @media (min-width: 320px) and (max-width: 768px) {
+    @media (max-width: 768px) {
+        .div-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .div-top {
+            padding: 1rem;
+            background-size: contain;
+    
+            .blur {
+                width: 10rem;
+                height: 10rem;     
+                filter: blur(50px);
+            }
+
+            .div-1 {
+                padding: 3px;
+            }
+    
+            .div-2 {
+                padding: 1rem;
+            }
+    
+            h1 {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+    
+            h2 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 8px;
+            }
+        }
+
+        .formation {
+            width: 90%;
+            height: auto;
+            padding: 1rem;
+            display: block;
+            border: grey solid 1px;
+            margin: 0 0 3rem 0;
+    
+            div {
+                width: 100%;
+                align-items: center;
+    
+                h1 {
+                    font-size: 1.5rem;
+                }
+    
+                h2 {
+                    font-size: 20px;
+                }
+
+                img {
+                    width: 50%;
+                }
+            }
+    
+            .acquis {
+                width: 100%;
+    
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .bachelor {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 1024px) {
         .div-container {
             display: flex;
             flex-direction: column;
@@ -243,11 +351,15 @@ export default {
             }
     
             h1 {
-                font-size: 3rem;
+                font-size: 7rem;
             }
     
             h2 {
-                font-size: 14px;
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 15px;
             }
         }
 

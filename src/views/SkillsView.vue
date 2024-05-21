@@ -267,7 +267,7 @@ export default {
     h1 {
         font-size: 10rem;
         font-weight: bold; 
-        font-family: 'Roboto';
+        font-family: Roboto;
     }
 
     p {

@@ -252,7 +252,7 @@ export default {
 
     /********************** Responsive *************************/
 
-    @media (max-width: 768px) {
+    @media (min-width: 800px) and (max-width: 1024px) {
         .div-container {
             display: flex;
             flex-direction: column;
@@ -260,15 +260,9 @@ export default {
         }
 
         .div-top {
-            padding: 1rem;
+            padding: 5rem;
             background-size: contain;
     
-            .blur {
-                width: 10rem;
-                height: 10rem;     
-                filter: blur(50px);
-            }
-
             .div-1 {
                 padding: 3px;
             }
@@ -278,16 +272,15 @@ export default {
             }
     
             h1 {
-                font-size: 4rem;
-                line-height: 5rem;
+                font-size: 7rem;
             }
     
             h2 {
-                font-size: 14px;
+                font-size: 15px;
             }
 
             p {
-                font-size: 8px;
+                font-size: 15px;
             }
         }
 
@@ -330,8 +323,8 @@ export default {
             flex-direction: column-reverse;
         }
     }
-
-    @media (min-width: 800px) and (max-width: 1024px) {
+    
+    @media (max-width: 768px) {
         .div-container {
             display: flex;
             flex-direction: column;
@@ -339,9 +332,15 @@ export default {
         }
 
         .div-top {
-            padding: 5rem;
+            padding: 1rem;
             background-size: contain;
     
+            .blur {
+                width: 10rem;
+                height: 10rem;     
+                filter: blur(50px);
+            }
+
             .div-1 {
                 padding: 3px;
             }
@@ -351,15 +350,16 @@ export default {
             }
     
             h1 {
-                font-size: 7rem;
+                font-size: 4rem;
+                line-height: 5rem;
             }
     
             h2 {
-                font-size: 15px;
+                font-size: 14px;
             }
 
             p {
-                font-size: 15px;
+                font-size: 8px;
             }
         }
 

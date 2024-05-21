@@ -236,6 +236,7 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 0;
+    color: #1E293B;
 
     .blur {
         width: 20rem;

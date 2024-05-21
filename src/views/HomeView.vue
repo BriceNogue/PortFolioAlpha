@@ -102,6 +102,7 @@ export default {
   justify-content: center;
   align-items: flex-end;
   padding: 5rem 10rem 0 0;
+  color: #1E293B;
 
   .my-name {
     line-height: 0;

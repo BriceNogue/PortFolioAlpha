@@ -158,4 +158,23 @@ cite {
         gap: 5px;
     }
 }
+
+@media (max-width: 320px) {
+
+    .footer {
+        min-height: 80vh;
+        padding-top: 1rem;
+        gap: 2rem;
+    }
+
+    cite {
+        font-size: 13px;
+    }
+    
+    .nav-links-xl {
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
 </style>

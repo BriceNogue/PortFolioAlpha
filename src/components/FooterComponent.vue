@@ -122,12 +122,8 @@ cite {
       text-decoration: none;
       font-size: 14px;
       text-transform: uppercase;
-      transition: 0.5s;
-    }
-  
-    .nav-link:hover {
-      text-decoration: underline;
-      scale: 1.1;
+      cursor: default;
+      pointer-events: none;
     }
 }
 

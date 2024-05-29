@@ -18,14 +18,71 @@
         <div class="projects inline-grid grid-cols-3 gap-9">
             <div class="project hover:scale-110">
                 <div>
-                    <img src="../assets/projects-imgs/project.svg" alt="">
+                    <img src="../assets/projects-imgs/bitkap-payment-BO.png" alt="">
                 </div>
-                <div>
-                    <h1>Plateforme Appli...</h1>
+                <div class="porject-name-div">
+                    <h1>IT Management API</h1>
                 </div>
                 <div class="project-infos">
                     <div>
-                        <h1>Plateforme Appli...</h1>
+                        <h1>IT Management</h1>
+                        <p>Proj académique</p>
+                        <p>2023 / 2024</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project hover:scale-110">
+                <div>
+                    <img src="../assets/projects-imgs/bitkap-payment-BO.png" alt="">
+                </div>
+                <div class="porject-name-div">
+                    <h1>IT Management Desktop</h1>
+                </div>
+                <div class="project-infos">
+                    <div>
+                        <h1>IT Management</h1>
+                        <p>Proj académique</p>
+                        <p>2023 / 2024</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project hover:scale-110">
+                <div>
+                    <img src="../assets/projects-imgs/bitkap-payment-BO.png" alt="">
+                </div>
+                <div class="porject-name-div">
+                    <h1>IT Management Mobile</h1>
+                </div>
+                <div class="project-infos">
+                    <div>
+                        <h1>IT Management</h1>
+                        <p>Proj académique</p>
+                        <p>2023 / 2024</p>
+                        <h2>Encours...</h2>
+                    </div>
+                    <div>
+                        <a>GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project hover:scale-110">
+                <div>
+                    <img src="../assets/projects-imgs/bitkap-payment-BO.png" alt="">
+                </div>
+                <div class="porject-name-div">
+                    <h1>IT Management Web</h1>
+                </div>
+                <div class="project-infos">
+                    <div>
+                        <h1>IT Management</h1>
                         <p>Proj académique</p>
                         <p>2023 / 2024</p>
                         <h2>Encours...</h2>
@@ -39,13 +96,14 @@
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
-                <div>
-                    <h1>Poject Name</h1>
+                <div class="porject-name-div">
+                    <h1>Napaj-App</h1>
                 </div>
                 <div class="project-infos">
                     <div>
-                        <h1>Poject Name</h1>
+                        <h1>Napaj-App</h1>
                         <p>Projet académique</p>
+                        <p>2023 / 2024</p>
                         <h2>Encours...</h2>
                     </div>
                     <div>
@@ -57,14 +115,14 @@
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
-                <div>
-                    <h1>Poject Name</h1>
+                <div class="porject-name-div">
+                    <h1>Mojio Auto</h1>
                 </div>
                 <div class="project-infos">
                     <div>
-                        <h1>Poject Name</h1>
-                        <p>Projet académique</p>
-                        <h2>Encours...</h2>
+                        <h1>Mojio Auto</h1>
+                        <p>Projet personnel</p>
+                        <h2>Terminé</h2>
                     </div>
                     <div>
                         <a>GitHub</a>
@@ -75,14 +133,14 @@
                 <div>
                     <img src="../assets/projects-imgs/project.svg" alt="">
                 </div>
-                <div>
-                    <h1>Poject Name</h1>
+                <div class="porject-name-div">
+                    <h1>TackCare</h1>
                 </div>
                 <div class="project-infos">
                     <div>
-                        <h1>Poject Name</h1>
+                        <h1>TackCare</h1>
                         <p>Projet académique</p>
-                        <h2>Encours...</h2>
+                        <h2>Terminé</h2>
                     </div>
                     <div>
                         <a>GitHub</a>
@@ -91,16 +149,16 @@
             </div>
             <div class="project hover:scale-110">
                 <div>
-                    <img src="../assets/projects-imgs/project.svg" alt="">
+                    <img src="../assets/projects-imgs/bitkap-payment-BO.png" alt="">
                 </div>
-                <div>
-                    <h1>Poject Name</h1>
+                <div class="porject-name-div">
+                    <h1>Bitkap Payment BackOffice</h1>
                 </div>
                 <div class="project-infos">                   
                 <div>
-                    <h1>Poject Name</h1>
-                    <p>Projet académique</p>
-                    <h2>Encours...</h2>
+                    <h1>Bitkap Payment BackOffice</h1>
+                    <p>Projet de stage</p>
+                    <h2>Terminé</h2>
                 </div>
                 <div>
                     <a>GitHub</a>
@@ -198,7 +256,7 @@ export default {
             width: auto;
             height: auto;
             box-shadow: 1px 1px 10px #93c5fd;
-            padding: 20px 10px 20px 10px;
+            padding: 10px 10px 30px 10px;
             border-radius: 10px;
             text-align: center;
             background: white;
@@ -206,6 +264,15 @@ export default {
             position: relative;
             color: #454545;
             overflow: hidden;
+
+            .porject-name-div {
+                width: 100%;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                bottom: 5px;
+                left: 0;
+            }
 
             .project-infos {
                 width: 100%;
@@ -223,7 +290,7 @@ export default {
             }
 
             h1 {
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: bold;
                 margin-top: 10px;
             }

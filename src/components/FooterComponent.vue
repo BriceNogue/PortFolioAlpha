@@ -122,12 +122,8 @@ cite {
       text-decoration: none;
       font-size: 14px;
       text-transform: uppercase;
-      transition: 0.5s;
-    }
-  
-    .nav-link:hover {
-      text-decoration: underline;
-      scale: 1.1;
+      cursor: default;
+      pointer-events: none;
     }
 }
 
@@ -146,6 +142,25 @@ cite {
     .footer {
         min-height: 60vh;
         gap: 3rem;
+    }
+
+    cite {
+        font-size: 13px;
+    }
+    
+    .nav-links-xl {
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .footer {
+        min-height: 80vh;
+        padding-top: 1rem;
+        gap: 2rem;
     }
 
     cite {
